@@ -1,5 +1,5 @@
 # LeetCode
-## 1367.二叉树中的列表
+## [1367.二叉树中的列表](https://github.com/artintel/LeetCode/blob/master/1367.%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E5%88%97%E8%A1%A8/main.cpp)
 > 考虑当前root节点和head的节点情况
 > 枚举二叉树中的每个节点为起点往下的路径是否有与链表相匹配的路径。 
 > 链表已经全部匹配完，匹配成功，返回 `true`
