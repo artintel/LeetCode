@@ -13,3 +13,11 @@
 > 链接：https://leetcode-cn.com/problems/linked-list-in-binary-tree/solution/er-cha-shu-zhong-de-lie-biao-by-leetcode-solution/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [92. 反转链表 II，暴力求解](https://github.com/artintel/LeetCode/blob/master/1367.%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E5%88%97%E8%A1%A8/main.cpp)
+
+> 先用两个指针通过移动分别找到 m 的前一个位置结点和 n 的当前节点。
+>
+> 为避免出现在1个节点出现的相应情况，选择`new`了一个头节点，该节点的下一个节点指向 `head`
+>
+> 在找到对应的两个节点位置后，将该段节点倒置，再连接起来
