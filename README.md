@@ -40,7 +40,7 @@
 >
 > 我的想法很粗糙，就是新建了两个vector，分别用来按顺序储存原链表和new 新的链表，同时接上next指针，这样需要做的就只有random指针了，那么再通过 `find() 和 distance()` 两个函数来查找到 random 指向的位置，再在new出来的数组中进行链接。 很暴力，当以后有了更好的想法后再更新
 
-## [725. 分隔链表](https://github.com/artintel/LeetCode/blob/master/725.%20%E5%88%86%E5%89%B2%E9%93%BE%E8%A1%A8/725.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8.cpp)
+## [725. 分隔链表](https://github.com/artintel/LeetCode/blob/master/725.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/725.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8.cpp)
 
 > 给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。
 >
