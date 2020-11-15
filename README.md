@@ -109,7 +109,7 @@
 > root->right = buildTreeNode(head, mid + 1, right);
 > ```
 
-# [剑指 Offer 18. 删除链表的节点](https://github.com/artintel/LeetCode/blob/master/109.%20%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
+# [剑指 Offer 18. 删除链表的节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2018.%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/source_code.cpp)
 
 > 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
 >
