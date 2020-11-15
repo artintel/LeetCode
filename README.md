@@ -108,3 +108,15 @@
 > head = head->right;//构建右子树
 > root->right = buildTreeNode(head, mid + 1, right);
 > ```
+
+# [剑指 Offer 18. 删除链表的节点](https://github.com/artintel/LeetCode/blob/master/109.%20%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
+
+> 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
+>
+> 返回删除后的链表的头节点
+>
+> ```输入: head = [4,5,1,9], val = 5
+> 输出: [4,1,9]
+> 解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -> 1 -> 9.
+> ```
+
