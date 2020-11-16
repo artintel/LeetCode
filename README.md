@@ -139,7 +139,7 @@
 > 输出: 5->4->3->2->1->NULL
 > ```
 
-## [面试题 02.02. 返回倒数第k个节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2024.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [面试题 02.02. 返回倒数第k个节点](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.02.%20%E8%BF%94%E5%9B%9E%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.txt)
 
 > 实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
 
