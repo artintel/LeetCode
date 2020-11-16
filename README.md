@@ -81,7 +81,7 @@
 >
 > 再次熟悉了 `unordered_set<T> object, object.find(), object.insert()` 函数
 
-# [109. 有序链表转换二叉搜索树](https://github.com/artintel/LeetCode/blob/master/109.%20%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
+## [109. 有序链表转换二叉搜索树](https://github.com/artintel/LeetCode/blob/master/109.%20%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%8D%A2%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
 
 > 给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。
 >
@@ -109,7 +109,7 @@
 > root->right = buildTreeNode(head, mid + 1, right);
 > ```
 
-# [剑指 Offer 18. 删除链表的节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2018.%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/source_code.cpp)
+## [剑指 Offer 18. 删除链表的节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2018.%20%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/source_code.cpp)
 
 > 给定单向链表的头指针和一个要删除的节点的值，定义一个函数删除该节点。
 >
@@ -120,7 +120,7 @@
 > 解释: 给定你链表中值为 5 的第二个节点，那么在调用了你的函数之后，该链表应变为 4 -> 1 -> 9.
 > ```
 
-# [剑指 Offer 22. 链表中倒数第k个节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2022.%20%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.cpp)
+## [剑指 Offer 22. 链表中倒数第k个节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2022.%20%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.cpp)
 
 > 输入一个链表，输出该链表中倒数第k个节点。为了符合大多数人的习惯，本题从1开始计数，即链表的尾节点是倒数第1个节点。例如，一个链表有6个节点，从头节点开始，它们的值依次是1、2、3、4、5、6。这个链表的倒数第3个节点是值为4的节点。
 >
@@ -130,12 +130,21 @@
 > 返回链表 4->5.
 > ```
 
-# [剑指 Offer 24. 反转链表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2024.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [剑指 Offer 24. 反转链表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2024.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/source_code.cpp)
 
 > 定义一个函数，输入一个链表的头节点，反转该链表并输出反转后链表的头节点
 >
 > ```输入: head = [4,5,1,9], val = 5
 > 输入: 1->2->3->4->5->NULL
 > 输出: 5->4->3->2->1->NULL
+> ```
+
+## [面试题 02.02. 返回倒数第k个节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2024.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/source_code.cpp)
+
+> 实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
+
+> ```
+> 输入： 1->2->3->4->5 和 k = 2
+> 输出： 4
 > ```
 
