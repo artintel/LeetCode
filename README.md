@@ -148,7 +148,7 @@
 > 输出： 4
 > ```
 
-## [面试题 02.04. 链表求和](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.02.%20%E8%BF%94%E5%9B%9E%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.txt)
+## [面试题 02.04. 链表求和](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.05.%20%E9%93%BE%E8%A1%A8%E6%B1%82%E5%92%8C/source_code.cpp)
 
 > 给定两个用链表表示的整数，每个节点包含一个数位。
 >
