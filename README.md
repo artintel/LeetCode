@@ -246,3 +246,64 @@
 > ```
 >
 > 由此即可删除重复点。
+
+## [6. Z 字形变换](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.01.%20%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/source_code.cpp)
+
+> 将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
+>
+> 比如输入字符串为 `"LEETCODEISHIRING"` 行数为 3 时，排列如下：
+
+> ```
+> L   C   I   R
+> E T O E S I I G
+> E   D   H   N
+> ```
+
+> 之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如：`"LCIRETOESIIGEDHN"`。
+>
+> 请你实现这个将字符串进行指定行数变换的函数：
+>
+> ```C++
+> string convert(string s, int numRows);
+> ```
+>
+> **示例 1:** 
+>
+> ```C++
+> 输入: s = "LEETCODEISHIRING", numRows = 3
+> 输出: "LCIRETOESIIGEDHN"
+> ```
+>
+> **示例 2:** 
+>
+> ```C++
+> 输入: s = "LEETCODEISHIRING", numRows = 4
+> 输出: "LDREOEIIECIHNTSG"
+> 解释:
+> 
+> L     D     R
+> E   O E   I I
+> E C   I H   N
+> T     S     G
+> ```
+>
+> 题解来自官方。第一个解的方法在于用`bool goingDown = true or false 来进行Z字形赋值` 很厉害
+>
+> 第二种方法就是
+>
+> **思路**
+>
+> 按照与逐行读取 Z 字形图案相同的顺序访问字符串。
+>
+> **算法**
+>
+> 首先访问行 0 中的所有字符，接着访问行 1，然后行 2，依此类推...
+>
+> 对于所有整数 `k`，
+>
+> - 行 0 中的字符位于索引 `k * (2 * numRows - 2) `处;
+> - 行 `numRows-1 `中的字符位于索引 `k* (2 * numRows - 2) + numRows - 1 `处;
+> - 内部的 行 `i` 中的字符位于索引 `k * (2 * numRows-2) + i `以及`(k+1)(2 * numRows - 2) - i `处;
+>
+> 
+
