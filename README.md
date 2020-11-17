@@ -247,7 +247,7 @@
 >
 > 由此即可删除重复点。
 
-## [6. Z 字形变换](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.01.%20%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/source_code.cpp)
+## [6. Z 字形变换](https://github.com/artintel/LeetCode/blob/master/6.%20Z%20%E5%AD%97%E5%BD%A2%E5%8F%98%E6%8D%A2/source_code.cpp)
 
 > 将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
 >
