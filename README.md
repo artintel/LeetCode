@@ -192,3 +192,57 @@
 >  ```
 
 > 用栈
+
+## [面试题 02.03. 删除中间节点](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.02.%20%E8%BF%94%E5%9B%9E%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.txt)
+
+> 实现一种算法，删除单向链表中间的某个节点（即不是第一个或最后一个节点），假定你只能访问该节点。
+
+> ```
+> 输入：单向链表a->b->c->d->e->f中的节点c
+> 结果：不返回任何数据，但该链表变为a->b->d->e->f
+> ```
+
+## [面试题 02.07. 链表相交](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.02.%20%E8%BF%94%E5%9B%9E%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.txt)
+
+> 给定两个（单向）链表，判定它们是否相交并返回交点。请注意相交的定义基于节点的引用，而不是基于节点的值。换句话说，如果一个链表的第k个节点与另一个链表的第j个节点是同一节点（引用完全相同），则这两个链表相交。
+>
+
+> ```
+> 输入：intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
+> 输出：Reference of the node with value = 8
+> 输入解释：相交节点的值为 8 （注意，如果两个列表相交则不能为 0）。从各自的表头开始算起，链表 A 为 [4,1,8,4,5]，链表 B 为 [5,0,1,8,4,5]。在 A 中，相交节点前有 2 个节点；在 B 中，相交节点前有 3 个节点。
+> ```
+
+> 简单题，考虑双指针(还有其他的算法，没有去做)。
+>
+> 两个指针 `followA = headA; followB = headB` ,直接相遇就输出，否则 判断是否走到头
+>
+> ```C++
+> followA ? followA = followA->next : followA = headB;
+> followB ? followB = followB->next : followB = headA;
+> ```
+
+## [面试题 02.01. 移除重复节点](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.02.%20%E8%BF%94%E5%9B%9E%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9/source_code.txt)
+
+> 编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
+
+> ```
+> 输入：[1, 2, 3, 3, 2, 1]
+> 输出：[1, 2, 3]
+> ```
+
+> 考虑用哈希map保存值`<int, int> (val, 0)`，每次检查代删除点是否已经存在:
+>
+> ```
+> if (map[val] == 0) {
+> 	map[val] = 1;
+> 	pre->next = cur;
+> 	pre = pre->next;
+> 	cur = cur->next;
+> }
+> esle{
+> 	cur = cur->next;
+> }
+> ```
+>
+> 由此即可删除重复点。
