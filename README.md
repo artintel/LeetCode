@@ -305,5 +305,23 @@
 > - 行 `numRows-1 `中的字符位于索引 `k* (2 * numRows - 2) + numRows - 1 `处;
 > - 内部的 行 `i` 中的字符位于索引 `k * (2 * numRows-2) + i `以及`(k+1)(2 * numRows - 2) - i `处;
 >
-> 
 
+## [面试题 02.06. 回文链表](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.03.%20%E5%88%A0%E9%99%A4%E4%B8%AD%E9%97%B4%E8%8A%82%E7%82%B9/source_code.cpp)
+
+> 编写一个函数，检查输入的链表是否是回文的。
+
+> ```
+> 输入： 1->2
+> 输出： false 
+> ```
+
+> 用快慢指针找到中间节点的前一个节点，从中间断开，前面一般的链表入栈，进行比较
+>
+> ```C++
+> while(!ans.empty()){
+> 	if (ans.top() != fast->val) break;
+>     ans.pop();
+>     fast = fast->next;
+> }
+> return ans.empty() ? true : false;
+> ```
