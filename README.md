@@ -326,7 +326,7 @@
 > return ans.empty() ? true : false;
 > ```
 
-## [面试题 02.08. 环路检测](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.06.%20%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [面试题 02.08. 环路检测](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.08.%20%E7%8E%AF%E8%B7%AF%E6%A3%80%E6%B5%8B/source_code.cpp)
 
 > 给定一个链表，如果它是有环链表，实现一个算法返回环路的开头节点。
 >
