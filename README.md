@@ -371,7 +371,7 @@
 > 来源：力扣（LeetCode）https://leetcode-cn.com/u/chen-hui-d/ 晨辉
 > 链接：https://leetcode-cn.com/problems/linked-list-cycle-lcci/solution/kuai-man-zhi-zhen-zheng-ming-bi-jiao-yan-jin-by-ch/
 
-## [面试题 02.04. 分隔链表](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.03.%20%E5%88%A0%E9%99%A4%E4%B8%AD%E9%97%B4%E8%8A%82%E7%82%B9/source_code.cpp)
+## [面试题 02.04. 分隔链表](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.04.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/source_code.cpp)
 
 > 编写程序以 x 为基准分割链表，使得所有小于 x 的节点排在大于或等于 x 的节点之前。如果链表中包含 x，x 只需出现在小于 x 的元素之后(如下所示)。分割元素 x 只需处于“右半部分”即可，其不需要被置于左右两部分之间。
 >
