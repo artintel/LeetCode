@@ -383,7 +383,7 @@
 
 > 实际只需要考虑 `node->val < x` 的节点即可，将所有满足条件的节点用另一条链表连接，最后将两个列表连接在一起，即可
 
-## [430. 扁平化多级双向链表](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.04.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [430. 扁平化多级双向链表](https://github.com/artintel/LeetCode/blob/master/430.%20%E6%89%81%E5%B9%B3%E5%8C%96%E5%A4%9A%E7%BA%A7%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/source_code.cpp)
 
 > 多级双向链表中，除了指向下一个节点和前一个节点指针之外，它还有一个子链表指针，可能指向单独的双向链表。这些子列表也可能会有一个或多个自己的子项，依此类推，生成多级数据结构，如下面的示例所示。
 >
