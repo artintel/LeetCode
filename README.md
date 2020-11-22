@@ -414,7 +414,7 @@
 >
 > 就可以完成扁平化双向链表。
 
-## [23. 合并K个升序链表](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.04.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [23. 合并K个升序链表](https://github.com/artintel/LeetCode/blob/master/23.%20%E5%90%88%E5%B9%B6k%E4%B8%AA%E5%8D%87%E5%BA%8F%E9%93%BE%E8%A1%A8/source_code.cpp)
 
 > 给你一个链表数组，每个链表都已经按升序排列。
 >
@@ -439,6 +439,9 @@
 > 输出：[]
 > ```
 
-> 实际只需要考虑 `node->val < x` 的节点即可，将所有满足条件的节点用另一条链表连接，最后将两个列表连接在一起，即可
-
-## 
+> 自己的思路:顺序地两两合并。但是效率很差
+>
+> 官方思路:
+>
+> 1. 分治法
+> 2. 队列合并
