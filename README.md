@@ -521,7 +521,7 @@
 
 > 双指针：用 `pre` 指在新数组的最后一个，有 `behind` 来遍历数组，当遇到 `nums[behind] != val;` 时，就将 `behind` 所指元素放入到 `pre`位置
 
-## [35. 搜索插入位置](https://github.com/artintel/LeetCode/blob/master/27.%20%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/source_code.cpp)
+## [35. 搜索插入位置](https://github.com/artintel/LeetCode/blob/master/35.%20%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/source_code.txt)
 
 > 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
 >
