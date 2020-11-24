@@ -446,7 +446,7 @@
 > 1. 分治法
 > 2. 队列合并
 
-## [25. K 个一组反转链表](https://github.com/artintel/LeetCode/blob/master/92.%20%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8II/Mycode.cpp)
+## [25. K 个一组反转链表](https://github.com/artintel/LeetCode/blob/master/25.%20K%E4%B8%AA%E4%B8%80%E7%BB%84%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/source_code.cpp)
 
 > 给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。
 >
@@ -480,3 +480,24 @@
 > //定义一个指向子链表的直接后缀
 > ListNode* tail;
 > ```
+
+## [26. 删除排序数组中的重复项](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2002.04.%20%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8/source_code.cpp)
+
+> 给定一个排序数组，你需要在 原地 删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
+>
+> 不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。
+>
+
+> ```
+> 给定数组 nums = [1,1,2], 
+> 
+> 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 
+> 
+> 你不需要考虑数组中超出新长度后面的元素。
+> ```
+
+> 用一个 left 一直指在重复数值的第一个(也可以理解成新的子数组的最后一个值)
+> 用for循环遍历过程的 i 作为第二个“指针”，当遇到和left指的数值不一样的时候，
+> `nums[left + 1] = nums[i];`
+> 遍历结束 `nums.resize(left + 1);`
+> `return left + 1`;
