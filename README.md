@@ -592,7 +592,7 @@
 >   著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 > 
 
-## [66. 加一](https://github.com/artintel/LeetCode/blob/master/35.%20%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE/source_code.cpp)
+## [66. 加一](https://github.com/artintel/LeetCode/blob/master/66.%20%E5%8A%A0%E4%B8%80/source_code.cpp)
 
 > 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
 >
