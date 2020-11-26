@@ -610,7 +610,7 @@
 > 输出：[1]
 > ```
 
-## [88. 合并两个有序数组](https://github.com/artintel/LeetCode/blob/master/66.%20%E5%8A%A0%E4%B8%80/source_code.cpp)
+## [88. 合并两个有序数组](https://github.com/artintel/LeetCode/blob/master/88.%20%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/source_code.cpp)
 
 > 给你两个有序整数数组 *nums1* 和 *nums2*，请你将 *nums2* 合并到 *nums1* 中*，*使 *nums1* 成为一个有序数组。
 
@@ -627,7 +627,7 @@
 
 > 先用额外的 `vector<int> num` 拷贝 `nums1`, 双指针分别遍历 `nums1, nums2`, 将值小的放入 `nums1`， 因为 `nums1`已被复制，所以无须考虑`nums1` 内的值是否被占用所以是安全的
 
-## [118. 杨辉三角](https://github.com/artintel/LeetCode/blob/master/66.%20%E5%8A%A0%E4%B8%80/source_code.cpp)
+## [118. 杨辉三角](https://github.com/artintel/LeetCode/blob/master/118.%20%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/source_code.cpp)
 
 > 给定一个非负整数 *numRows，*生成杨辉三角的前 *numRows* 行。
 
