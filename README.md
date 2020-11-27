@@ -661,4 +661,28 @@
 >    ans.emplace_back(temp);
 >    ```
 >
->    
+
+## [119. 杨辉三角II](https://github.com/artintel/LeetCode/blob/master/118.%20%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/source_code.cpp)
+
+> 给定一个非负索引 *k*，其中 *k* ≤ 33，返回杨辉三角的第 *k* 行。
+
+> ```
+> 输入: 3
+> 输出: [1,3,3,1]
+> ```
+
+> 动态规划
+>
+> ```C++
+> vector<int> dp(rowIndex + 1, 1);
+>     for (int i = 1; i <= rowIndex; i++) {
+>         for (int j = i - 1; j >= 1; j--) {
+>             dp[j] = dp[j - 1] + dp[j];
+>         }
+>     }
+> ```
+>
+> 这个优化可以将空间复杂度控制为 O(k)；
+
+
+
