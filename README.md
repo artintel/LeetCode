@@ -662,7 +662,7 @@
 >    ```
 >
 
-## [119. 杨辉三角II](https://github.com/artintel/LeetCode/blob/master/118.%20%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92/source_code.cpp)
+## [119. 杨辉三角II](https://github.com/artintel/LeetCode/blob/master/119.%20%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92II/source_code.cpp)
 
 > 给定一个非负索引 *k*，其中 *k* ≤ 33，返回杨辉三角的第 *k* 行。
 
