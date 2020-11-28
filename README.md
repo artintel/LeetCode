@@ -737,3 +737,37 @@
 
 > 思路同121
 
+## [167. 两数之和 II - 输入有序数组](https://github.com/artintel/LeetCode/blob/master/167.%20%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C%20II-%20%E8%BE%93%E5%85%A5%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84/source_code.cpp)
+
+> 给定一个已按照升序排列 的有序数组，找到两个数使得它们相加之和等于目标数。
+>
+> 函数应该返回这两个下标值 index1 和 index2，其中 index1 必须小于 index2。
+>
+
+> ```
+> 输入: numbers = [2, 7, 11, 15], target = 9
+> 输出: [1,2]
+> 解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 
+> ```
+
+> 思路：
+>
+> 先用二分查找发找到不大于 target 的值的 Index, 用双指针分别指向数组起点和 index。如此，分为了三种情况
+>
+> 1. ```C++
+>    if(numbers[i] + numbers[j] == target){
+>        ans.emplace_back(min(i, j) + 1);
+>        ans.emplace_back(max(i, j) + 1);
+>        break;
+>    }
+>    ```
+>
+> 2. ```C++
+>    else if (numbers[i] + numbers[j] > target){
+>        j--;
+>    }
+>    ```
+>
+> 3. ```C++
+>    else i++;
+>    ```
