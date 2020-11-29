@@ -807,7 +807,7 @@
 > 输出: true
 > ```
 
-## [219. 存在重复元素II](https://github.com/artintel/LeetCode/blob/master/217.%20%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/source_code.cpp)
+## [219. 存在重复元素II](https://github.com/artintel/LeetCode/tree/master/219.%20%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0%20II)
 
 > 给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的 绝对值 至多为 k。
 >
