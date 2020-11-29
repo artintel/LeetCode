@@ -796,7 +796,7 @@
 >
 > 排序，因为众数必定大于  `⌊ n/2 ⌋`， 所以在排序后，`nums[nums.size() >> 1] 的数必定是众数`
 
-## [217. 存在重复元素](https://github.com/artintel/LeetCode/blob/master/169.%20%E5%A4%9A%E6%95%B0%E5%85%83%E7%B4%A0/source_code.cpp)
+## [217. 存在重复元素](https://github.com/artintel/LeetCode/blob/master/217.%20%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0/source_code.cpp)
 
 > 给定一个整数数组，判断是否存在重复元素。
 >
