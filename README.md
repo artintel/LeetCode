@@ -858,7 +858,7 @@
 >
 > 思路很简单，需要考虑的是是否越界，当 nums[i] 为大正整数， nums[i - 1] 为大的负整数时，如果使用 `nums[i] - nums[i - 1] == 1?` 作为条件边界的话，可能出现内存溢出的情况，所以使用 `nums[i - 1] + 1 == nums[i] ? ` 来作为条件边界
 
-## [268. 丢失的数字](https://github.com/artintel/LeetCode/tree/master/219.%20%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0%20II)
+## [268. 丢失的数字](https://github.com/artintel/LeetCode/blob/master/268.%20%E4%B8%A2%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 给定一个包含 [0, n] 中 n 个数的数组 nums ，找出 [0, n] 这个范围内没有出现在数组中的那个数。
 >
