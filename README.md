@@ -883,7 +883,7 @@
 >
 > 利用(a[0] + a[n]) * n / 2公式
 
-## [283. 移动零](https://github.com/artintel/LeetCode/blob/master/268.%20%E4%B8%A2%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
+## [283. 移动零](https://github.com/artintel/LeetCode/blob/master/283.%20%E7%A7%BB%E5%8A%A8%E9%9B%B6/source_code.cpp)
 
 > 给定一个数组 `nums`，编写一个函数将所有 `0` 移动到数组的末尾，同时保持非零元素的相对顺序
 
