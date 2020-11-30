@@ -822,7 +822,7 @@
 >
 > 利用 hash (unordered_set)
 
-## [228. 汇总区间](https://github.com/artintel/LeetCode/tree/master/219.%20%E5%AD%98%E5%9C%A8%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0%20II)
+## [228. 汇总区间](https://github.com/artintel/LeetCode/blob/master/228.%20%E6%B1%87%E6%80%BB%E5%8C%BA%E9%97%B4/source_code.cpp)
 
 > 给定一个无重复元素的有序整数数组 nums 。
 >
