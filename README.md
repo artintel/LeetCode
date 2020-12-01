@@ -894,7 +894,7 @@
 >
 > 堆排序
 
-## [414. 第三大的数](https://github.com/artintel/LeetCode/blob/master/283.%20%E7%A7%BB%E5%8A%A8%E9%9B%B6/source_code.cpp)
+## [414. 第三大的数](https://github.com/artintel/LeetCode/blob/master/414.%20%E7%AC%AC%E4%B8%89%E5%A4%A7%E7%9A%84%E6%95%B0/source_code.cpp)
 
 > 给定一个非空数组，返回此数组中第三大的数。如果不存在，则返回数组中最大的数。要求算法时间复杂度必须是O(n)。
 
@@ -919,5 +919,6 @@
 > 存在两个值为2的数，它们都排第二。
 > ```
 >
-> 堆排序
+> 1. 用了归并排序
+> 2. 用了小顶堆
 
