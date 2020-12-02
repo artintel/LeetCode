@@ -948,7 +948,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [485. 最大连续1的个数](https://github.com/artintel/LeetCode/blob/master/414.%20%E7%AC%AC%E4%B8%89%E5%A4%A7%E7%9A%84%E6%95%B0/source_code.cpp)
+## [485. 最大连续1的个数](https://github.com/artintel/LeetCode/blob/master/485.%20%E6%9C%80%E5%A4%A7%E8%BF%9E%E7%BB%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/source_code.cpp)
 
 > 给定一个二进制数组， 计算其中最大连续1的个数。
 
@@ -976,5 +976,3 @@
 > 		max_1 = max(max_1, temp_1);
 > 		将状态改为 false;
 > ```
->
-> 
