@@ -977,7 +977,7 @@
 > 		将状态改为 false;
 > ```
 
-## [561. 数组拆分 I](https://github.com/artintel/LeetCode/blob/master/485.%20%E6%9C%80%E5%A4%A7%E8%BF%9E%E7%BB%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/source_code.cpp)
+## [561. 数组拆分 I](https://github.com/artintel/LeetCode/blob/master/561.%20%E6%95%B0%E7%BB%84%E6%8B%86%E5%88%86%20I/source_code.cpp)
 
 > 给定长度为 2n 的整数数组 nums ，你的任务是将这些数分成 n 对, 例如 (a1, b1), (a2, b2), ..., (an, bn) ，使得从 1 到 n 的 min(ai, bi) 总和最大。
 >
