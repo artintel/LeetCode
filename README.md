@@ -997,7 +997,7 @@
 > 排序：并且选取排序后每组的第一个数
 >
 
-## [566. 重塑矩阵](https://github.com/artintel/LeetCode/blob/master/561.%20%E6%95%B0%E7%BB%84%E6%8B%86%E5%88%86%20I/source_code.cpp)
+## [566. 重塑矩阵](https://github.com/artintel/LeetCode/blob/master/566.%20%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5/source_code.cpp)
 
 > 在MATLAB中，有一个非常有用的函数 reshape，它可以将一个矩阵重塑为另一个大小不同的新矩阵，但保留其原始数据。
 >
