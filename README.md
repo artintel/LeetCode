@@ -1063,7 +1063,7 @@
 
 > 通过限制我们可以考虑使用位判定。字符总数为26个。那么定义一个 int 型足够。再通过左移和异或运算即可求得是否有重复
 
-## [面试题 08.03. 魔术索引](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.01.%20%E5%88%A4%E5%AE%9A%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/source_code.cpp)
+## [面试题 08.03. 魔术索引](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2008.03.%20%E9%AD%94%E6%9C%AF%E7%B4%A2%E5%BC%95/source_code.cpp)
 
 > 魔术索引。 在数组A[0...n-1]中，有所谓的魔术索引，满足条件A[i] = i。给定一个有序整数数组，编写一种方法找出魔术索引，若有的话，在数组A中找出一个魔术索引，如果没有，则返回-1。若有多个魔术索引，返回索引值最小的一个。
 >
