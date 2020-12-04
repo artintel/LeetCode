@@ -1044,7 +1044,7 @@
 > return g;
 > ```
 
-## [面试题 01.01. 判定字符是否唯一](https://github.com/artintel/LeetCode/blob/master/506.%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/source_code.cpp)
+## [面试题 01.01. 判定字符是否唯一](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.01.%20%E5%88%A4%E5%AE%9A%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/source_code.cpp)
 
 > 实现一个算法，确定一个字符串 `s` 的所有字符是否全都不同
 
