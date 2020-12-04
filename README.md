@@ -1022,7 +1022,7 @@
 
 > 还是相对比较暴力的：将 `nums` 原数组数据遍历出来放在新的 `vector` 容器中，再通过一个双循环进行遍历进行`reshape` 操作
 
-## [506. 斐波那契数列](https://github.com/artintel/LeetCode/blob/master/566.%20%E9%87%8D%E5%A1%91%E7%9F%A9%E9%98%B5/source_code.cpp)
+## [506. 斐波那契数列](https://github.com/artintel/LeetCode/blob/master/509.%20%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/source_code.cpp)
 
 > **斐波那契数**，通常用 `F(n)` 表示，形成的序列称为**斐波那契数列**。该数列由 `0` 和 `1` 开始，后面的每一项数字都是前面两项数字的和。也就是：
 
