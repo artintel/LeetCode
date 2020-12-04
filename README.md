@@ -1078,7 +1078,7 @@
 >
 > 数组是有序的， 那么当 `nums[i] < i` 的时候，在进行下一轮之前， 可以让 `i` 跳至 `nums[i]`, 即 `i = nums[i]`
 
-## [面试题 01.02. 判定是否互为字符重排](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2008.03.%20%E9%AD%94%E6%9C%AF%E7%B4%A2%E5%BC%95/source_code.cpp)
+## [面试题 01.02. 判定是否互为字符重排](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.02.%20%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/source_code.cpp)
 
 > 给定两个字符串 `s1` 和 `s2`，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。
 
