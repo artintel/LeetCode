@@ -1124,7 +1124,7 @@
 > ```
 >
 
-## [70. 爬楼梯](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.02.%20%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/source_code.cpp)
+## [70. 爬楼梯](https://github.com/artintel/LeetCode/blob/master/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF/source_code.cpp)
 
 > 假设你正在爬楼梯。需要 *n* 阶你才能到达楼顶。
 >
