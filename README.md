@@ -1092,7 +1092,7 @@
 
 > 定义两个set,分别储存两个字符串中个字符出现的个数，最后再检查是否出现频率相等
 
-## [605. 种花问题](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.02.%20%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/source_code.cpp)
+## [605. 种花问题](https://github.com/artintel/LeetCode/blob/master/605.%20%E7%A7%8D%E8%8A%B1%E9%97%AE%E9%A2%98/source_code.cpp)
 
 > 假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
 >
@@ -1123,5 +1123,4 @@
 > return count >= n ? true : false;
 > ```
 >
-> 
 
