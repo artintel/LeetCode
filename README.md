@@ -1092,3 +1092,36 @@
 
 > 定义两个set,分别储存两个字符串中个字符出现的个数，最后再检查是否出现频率相等
 
+## [605. 种花问题](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2001.02.%20%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/source_code.cpp)
+
+> 假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
+>
+> 给定一个花坛（表示为一个数组包含0和1，其中0表示没种植花，1表示种植了花），和一个数 n 。能否在不打破种植规则的情况下种入 n 朵花？能则返回True，不能则返回False。
+>
+
+> ```
+> 输入: flowerbed = [1,0,0,0,1], n = 1
+> 输出: True
+> 
+> 输入: flowerbed = [1,0,0,0,1], n = 2
+> 输出: False
+> ```
+
+> 考虑贪心算法+状态机，status 初始化为 true
+>
+> ```c++
+> 判断当前位置是否为零：
+>     if true & 状态机 false:
+> 		状态机改为 true,表示下一个有可能能够种花
+>     if true & 状态机 true & 下一个位置也为 0 :
+> 		可以种花，status转为false;、
+>         if i + 1 越界：
+>             count++;
+> 			break;
+> 如果当前不为0，status == true:
+> 	status = false;
+> return count >= n ? true : false;
+> ```
+>
+> 
+
