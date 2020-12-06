@@ -1232,7 +1232,7 @@
 >
 > 对于为何要 `num.size() + 1` ，因为若是求 `0 ~ j`, 按`new int [num.size()]` 算的话，最终应该是 `return sum[j] - sum[i - 1];`, 越界报错。所以添加一个虚拟的 `0`
 
-## [392. 判断子序列](https://github.com/artintel/LeetCode/blob/master/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF/source_code.cpp)
+## [392. 判断子序列](https://github.com/artintel/LeetCode/blob/master/392.%20%E5%88%A4%E6%96%AD%E5%AD%90%E5%BA%8F%E5%88%97/source_code.cpp)
 
 > 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。
 >
