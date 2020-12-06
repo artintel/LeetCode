@@ -1203,3 +1203,32 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+## [303. 区域和检索 - 数组不可变](https://github.com/artintel/LeetCode/blob/master/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF/source_code.cpp)
+
+> 给定一个整数数组  nums，求出数组从索引 i 到 j（i ≤ j）范围内元素的总和，包含 i、j 两点。
+>
+> 实现 NumArray 类：
+>
+> - `NumArray(int[] nums)` 使用数组 `nums` 初始化对象
+> - `int sumRange(int i, int j)` 返回数组 `nums` 从索引 `i` 到 `j（i ≤ j）`范围内元素的总和，包含 `i、j `两点（也就是 `sum(nums[i], nums[i + 1], ... , nums[j])`）
+
+> ```
+> 输入： 2
+> 输出： 2
+> 解释： 有两种方法可以爬到楼顶。
+> 1.  1 阶 + 1 阶
+> 2.  2 阶
+> 
+> 
+> 输入： 3
+> 输出： 3
+> 解释： 有三种方法可以爬到楼顶。
+> 1.  1 阶 + 1 阶 + 1 阶
+> 2.  1 阶 + 2 阶
+> 3.  2 阶 + 1 阶
+> ```
+
+> 考虑hash，缓存，定义私有成员 `int* sum`, 在构造函数中 `new int [nums.size() + 1]` 数组来缓存 `0 - i`  的和，最终要求出 `i ~ j`  之间的数组和只需要 `return sum[j + 1] - sum[i]` 
+>
+> 对于为何要 `num.size() + 1` ，因为若是求 `0 ~ j`, 按`new int [num.size()]` 算的话，最终应该是 `return sum[j] - sum[i - 1];`, 越界报错。所以添加一个虚拟的 `0`
+
