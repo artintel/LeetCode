@@ -1203,7 +1203,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [303. 区域和检索 - 数组不可变](https://github.com/artintel/LeetCode/blob/master/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF/source_code.cpp)
+## [303. 区域和检索 - 数组不可变](https://github.com/artintel/LeetCode/blob/master/303.%20%E5%8C%BA%E5%9F%9F%E5%92%8C%E6%A3%80%E6%B5%8B%20-%20%E6%95%B0%E7%BB%84%E4%B8%8D%E5%8F%AF%E5%8F%98/source_code.cpp)
 
 > 给定一个整数数组  nums，求出数组从索引 i 到 j（i ≤ j）范围内元素的总和，包含 i、j 两点。
 >
