@@ -1276,7 +1276,7 @@
 > 输出: 6
 > ```
 
-## [643. 子数组最大平均数](https://github.com/artintel/LeetCode/blob/master/628.%20%E4%B8%89%E4%B8%AA%E6%95%B0%E7%9A%84%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF/source_code.cpp)
+## [643. 子数组最大平均数](https://github.com/artintel/LeetCode/blob/master/643.%20%E5%AD%90%E6%95%B0%E7%BB%84%E6%9C%80%E5%A4%A7%E5%B9%B3%E5%9D%87%E6%95%B0/source_code.cpp)
 
 > 给定 `n` 个整数，找出平均数最大且长度为 `k` 的连续子数组，并输出该最大平均数。
 
