@@ -1267,7 +1267,7 @@
 >
 > 否则`dp[i][j] = max(dp[i][j - 1], dp[i - 1][j]);`
 
-## [70. 爬楼梯](https://github.com/artintel/LeetCode/blob/master/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF/source_code.cpp)
+## [628. 三个数的最大乘积](https://github.com/artintel/LeetCode/blob/master/628.%20%E4%B8%89%E4%B8%AA%E6%95%B0%E7%9A%84%E6%9C%80%E5%A4%A7%E4%B9%98%E7%A7%AF/source_code.cpp)
 
 > 给定一个整型数组，在数组中找出由三个数组成的最大乘积，并输出这个乘积。
 >
