@@ -1266,3 +1266,14 @@
 > 如果`s[i] == t[j], dp[i][j] = dp[i - 1][j - 1];`
 >
 > 否则`dp[i][j] = max(dp[i][j - 1], dp[i - 1][j]);`
+
+## [70. 爬楼梯](https://github.com/artintel/LeetCode/blob/master/70.%20%E7%88%AC%E6%A5%BC%E6%A2%AF/source_code.cpp)
+
+> 给定一个整型数组，在数组中找出由三个数组成的最大乘积，并输出这个乘积。
+>
+
+> ```
+> 输入: [1,2,3]
+> 输出: 6
+> ```
+
