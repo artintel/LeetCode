@@ -1288,7 +1288,7 @@
 
 > 滑动窗口，k 大小的窗口数组在`nums()`数组上滑动，找到和最大窗口
 
-## [10. 正则表达式匹配](https://github.com/artintel/LeetCode/blob/master/643.%20%E5%AD%90%E6%95%B0%E7%BB%84%E6%9C%80%E5%A4%A7%E5%B9%B3%E5%9D%87%E6%95%B0/source_code.cpp)
+## [10. 正则表达式匹配](https://github.com/artintel/LeetCode/blob/master/10.%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%B9%E9%85%8D/source_code.cpp)
 
 > 给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。
 >
