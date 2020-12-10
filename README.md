@@ -1356,7 +1356,7 @@
 
 > 双指针法：
 
-## [15. 三数之和](https://github.com/artintel/LeetCode/blob/master/11.%20%E7%9B%9B%E6%9C%80%E5%A4%9A%E6%B0%B4%E7%9A%84%E5%AE%B9%E5%99%A8/source_code.cpp)
+## [15. 三数之和](https://github.com/artintel/LeetCode/blob/master/15.%20%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/source_code.cpp)
 
 > 给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。
 >
