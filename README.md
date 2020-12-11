@@ -1373,5 +1373,34 @@
 > ]
 > ```
 
-> 排序以及三重循环
+> 排序以及双指针
+
+## [16. 最接近的三数之和](https://github.com/artintel/LeetCode/blob/master/15.%20%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/source_code.cpp)
+
+> 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
+>
+
+> ```
+> 输入：nums = [-1,2,1,-4], target = 1
+> 输出：2
+> 解释：与 target 最接近的和是 2 (-1 + 2 + 1 = 2) 。
+> ```
+
+> 本题思想与15.三数之和基本一致。
+>
+> 我们利用`first & third`  指针分别指向排序后的数组头尾，进行 `for-loop`
+>
+> `for(int first = 0; first < nums.size(); first++)`
+>
+> `for(int third = nums.size() - 1; third > first + 1; third--)`
+>
+> 需注意的是，当他们开始移动要注意以后的的值和上一路的值是否相等 --- 即避免重复
+>
+> `if(first > 0 && nums[first - 1] == nums[first]) continue;`
+>
+> `if(third != nums.size() - 1 && nums[third + 1] == nums[third]) continue;`
+>
+> 于此，再利用一个移动指针 `second = first + 1`, 在 `while(second < third)` 的边界条件下查看三数之和与 `target` 的差距, 并和上一次的的差值比大小，去最小值，并用中间变量`result` 存储.
+>
+> 最后返回 `target - result` 即可
 
