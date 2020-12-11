@@ -1375,7 +1375,7 @@
 
 > 排序以及双指针
 
-## [16. 最接近的三数之和](https://github.com/artintel/LeetCode/blob/master/15.%20%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/source_code.cpp)
+## [16. 最接近的三数之和](https://github.com/artintel/LeetCode/blob/master/16.%20%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/source_code.cpp)
 
 > 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
 >
