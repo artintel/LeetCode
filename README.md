@@ -1404,7 +1404,7 @@
 >
 > 最后返回 `target - result` 即可
 
-## [31. 下一个排列](https://github.com/artintel/LeetCode/blob/master/16.%20%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C/source_code.cpp)
+## [31. 下一个排列](https://github.com/artintel/LeetCode/blob/master/31.%20%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%8E%92%E5%88%97/source_code.cpp)
 
 > 实现获取 下一个排列 的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。
 >
