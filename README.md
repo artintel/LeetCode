@@ -1572,3 +1572,39 @@
 > 链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/sou-suo-xuan-zhuan-pai-xu-shu-zu-by-leetcode-solut/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [34. 在排序数组中查找元素的第一个和最后一个位置](https://github.com/artintel/LeetCode/blob/master/33.%20%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84/source_code.cpp)
+
+> 给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
+>
+> 如果数组中不存在目标值 target，返回 [-1, -1]。
+>
+> 进阶：
+>
+> 你可以设计并实现时间复杂度为 O(log n) 的算法解决此问题吗？
+>
+
+> ```
+> 输入：nums = [5,7,7,8,8,10], target = 8
+> 输出：[3,4]
+> 
+> 输入：nums = [5,7,7,8,8,10], target = 6
+> 输出：[-1,-1]
+> 
+> 输入：nums = [], target = 0
+> 输出：[-1,-1]
+> ```
+
+> 二分搜索
+>
+> 思路和算法
+>
+> 题目要求算法时间复杂度必须是 `O(logn)` 的级别，这提示我们可以使用二分搜索的方法。
+>
+> 数组本身值有序的，使用二分查找 `nums[i] == target`, 为真返回 `i` 否则返回 `-1`, 且如当确定不为真时，可直接返回 `[-1, -1]`， 否则，进行查找 `nums[i] == target` 下的最大坐标值并返回。需要考虑的边界条件
+>
+> - nums.size() == 0
+> - nums.size() == 1
+> - 对于查找最小时 `return nums[left] == target ? left : -1;`
+> - 对于查找最大时 `return nums[left] == target ? left : left - 1;`
+
