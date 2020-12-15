@@ -1608,7 +1608,7 @@
 > - 对于查找最小时 `return nums[left] == target ? left : -1;`
 > - 对于查找最大时 `return nums[left] == target ? left : left - 1;`
 
-## [41. 缺失的第一个正数](https://github.com/artintel/LeetCode/blob/master/34.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE/source_code.cpp)
+## [41. 缺失的第一个正数](https://github.com/artintel/LeetCode/blob/master/41.%20%E7%BC%BA%E5%A4%B1%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%95%B0/source_code.cpp)
 
 > 给你一个未排序的整数数组，请你找出其中没有出现的最小的正整数。
 
@@ -1646,5 +1646,4 @@
 >
 > 哈希表和置换
 >
-> [leetcode解析]: https://leetcode-cn.com/problems/first-missing-positive/solution/que-shi-de-di-yi-ge-zheng-shu-by-leetcode-solution/
-
+> [leetcode解析]: https://leetcode-cn.com/problems/first-missing-positive/solution/que-shi-de-di-yi-ge-zheng-shu-by-leetcode-solution/	"leetcode解析"
