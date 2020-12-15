@@ -1644,6 +1644,3 @@
 >
 > 如果最终 `ans` 的值全为 `1`， 那么所缺最小值即为 `nums.size() + 1`
 >
-> 哈希表和置换
->
-> [leetcode解析]: https://leetcode-cn.com/problems/first-missing-positive/solution/que-shi-de-di-yi-ge-zheng-shu-by-leetcode-solution/	"leetcode解析"
