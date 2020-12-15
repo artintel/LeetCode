@@ -1608,3 +1608,43 @@
 > - 对于查找最小时 `return nums[left] == target ? left : -1;`
 > - 对于查找最大时 `return nums[left] == target ? left : left - 1;`
 
+## [41. 缺失的第一个正数](https://github.com/artintel/LeetCode/blob/master/34.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E5%85%83%E7%B4%A0%E7%9A%84%E4%B8%80%E4%B8%AA%E5%92%8C%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E4%BD%8D%E7%BD%AE/source_code.cpp)
+
+> 给你一个未排序的整数数组，请你找出其中没有出现的最小的正整数。
+
+> ```
+> 输入: [1,2,0]
+> 输出: 3
+> 
+> 输入: [3,4,-1,1]
+> 输出: 2
+> 
+> 输入: [7,8,9,11,12]
+> 输出: 1
+> ```
+
+> 哈希:
+>
+> 另建立一个 `vector<int> ans(nums.size(), 0);`
+>
+> 边界条件：当 `nums[i]` 处于 `[1, nums.size]` 之间，那么 `ans[elem - 1] = 1`，最后遍历 `ans` 当遇到第一个 `ans[i] != 1` 那么就找到了所缺的最小正整数
+>
+> ```C++
+> for(auto elem : nums){
+> 	if(elem <= n && elem > 0){
+> 	ans[elem - 1] = -1;
+> 	}
+> }        
+> for(int i = 0; i < n; i++){
+>     if(ans[i] != -1)
+>         return i + 1;
+> }
+> return n + 1;
+> ```
+>
+> 如果最终 `ans` 的值全为 `1`， 那么所缺最小值即为 `nums.size() + 1`
+>
+> 哈希表和置换
+>
+> [leetcode解析]: https://leetcode-cn.com/problems/first-missing-positive/solution/que-shi-de-di-yi-ge-zheng-shu-by-leetcode-solution/
+
