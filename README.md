@@ -1658,11 +1658,27 @@
 > 输出：9
 > ```
 
-> 动态规划
+> **动态规划**
 >
-> 双指针
+> 对于数组中的每个元素，我们找出下雨后水能达到的最高位置，等于两边最大高度的较小值减去当前高度的值。
 >
-> 算法
+> 可以提前存储这个值。因此，可以通过动态编程解决。
+>
+> **算法**
+>
+> 找到数组中从下标 i 到最左端最高的条形块高度 left_max。
+> 找到数组中从下标 i 到最右端最高的条形块高度 \right_max。
+> 扫描数组 height 并更新答案：
+> 累加 min(max_left[i],max_right[i])−height[i] 到 ans 上
+>
+> 作者：LeetCode
+> 链接：https://leetcode-cn.com/problems/trapping-rain-water/solution/jie-yu-shui-by-leetcode/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+>
+> **双指针**
+>
+> **算法**
 >
 > - 初始化 left 指针为 0 并且 right 指针为 size-1
 > - While left<right, do:
