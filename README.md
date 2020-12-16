@@ -1660,4 +1660,23 @@
 
 > 动态规划
 >
+> 双指针
+>
+> 算法
+>
+> - 初始化 left 指针为 0 并且 right 指针为 size-1
+> - While left<right, do:
+>   - **If** height[left] < height[right]
+>     - **If** height[left]≥left_max, 更新 left_max
+>     - **Else** 累加 left_max−height[left] 到 ans
+>     - left = left + 1.
+>   - **Else**
+>     - **If** height[right] ≥ right_max, 更新 right_max
+>     - **Else** 累加 right_max−height[right] 到 ans
+>     - right = right - 1.
+>
+> 作者：LeetCode
+> 链接：https://leetcode-cn.com/problems/trapping-rain-water/solution/jie-yu-shui-by-leetcode/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
