@@ -1645,7 +1645,7 @@
 > 如果最终 `ans` 的值全为 `1`， 那么所缺最小值即为 `nums.size() + 1`
 >
 
-## [42. 接雨水](https://github.com/artintel/LeetCode/blob/master/41.%20%E7%BC%BA%E5%A4%B1%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%AD%A3%E6%95%B0/source_code.cpp)
+## [42. 接雨水](https://github.com/artintel/LeetCode/blob/master/42.%20%E6%8E%A5%E9%9B%A8%E6%B0%B4/source_code.cpp)
 
 > 给定 *n* 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。
 
@@ -1658,24 +1658,6 @@
 > 输出：9
 > ```
 
-> 哈希:
+> 动态规划
 >
-> 另建立一个 `vector<int> ans(nums.size(), 0);`
->
-> 边界条件：当 `nums[i]` 处于 `[1, nums.size]` 之间，那么 `ans[elem - 1] = 1`，最后遍历 `ans` 当遇到第一个 `ans[i] != 1` 那么就找到了所缺的最小正整数
->
-> ```C++
-> for(auto elem : nums){
-> 	if(elem <= n && elem > 0){
-> 	ans[elem - 1] = -1;
-> 	}
-> }        
-> for(int i = 0; i < n; i++){
->  if(ans[i] != -1)
->      return i + 1;
-> }
-> return n + 1;
-> ```
->
-> 如果最终 `ans` 的值全为 `1`， 那么所缺最小值即为 `nums.size() + 1`
 
