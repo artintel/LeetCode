@@ -1696,7 +1696,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [44. 通配符匹配](https://github.com/artintel/LeetCode/blob/master/42.%20%E6%8E%A5%E9%9B%A8%E6%B0%B4/source_code.cpp)
+## [44. 通配符匹配](https://github.com/artintel/LeetCode/blob/master/44.%20%E9%80%9A%E9%85%8D%E7%AC%A6%E5%8C%B9%E9%85%8D/source_code.cpp)
 
 > 给定一个字符串 (`s`) 和一个字符模式 (`p`) ，实现一个支持 `'?'` 和 `'*'` 的通配符匹配。
 
