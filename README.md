@@ -1814,7 +1814,7 @@
 >
 > 暴力解法: 每一次行列经过元素个数是递减至0的，通过此规律来引导对元素的遍历。
 
-## [48. 旋转图像](https://github.com/artintel/LeetCode/blob/master/54.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5/source_code.cpp)
+## [48. 旋转图像](https://github.com/artintel/LeetCode/tree/master/48.%20%E6%97%8B%E8%BD%AC%E5%9B%BE%E5%83%8F)
 
 > 给定一个 n × n 的二维矩阵表示一个图像。
 >
