@@ -1857,7 +1857,7 @@
 >    }
 >```
 
-## [55. 跳跃游戏](https://github.com/artintel/LeetCode/tree/master/48.%20%E6%97%8B%E8%BD%AC%E5%9B%BE%E5%83%8F)
+## [55. 跳跃游戏](https://github.com/artintel/LeetCode/blob/master/55.%20%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/source_code.cpp)
 
 > 给定一个非负整数数组，你最初位于数组的第一个位置。
 >
