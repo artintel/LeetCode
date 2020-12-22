@@ -1879,7 +1879,7 @@
 >
 >定义一个 `end_of_position` 作为当前序列能到达的最大位置，并从 `[0, end_of_position)` 遍历，如果有值大于 `end_of_position`，更新最大位置，当最大位置 `>= lenght - 1` 时，既能到达数组最后位置，反之则不能
 
-## [56. 合并区间](https://github.com/artintel/LeetCode/blob/master/55.%20%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F/source_code.cpp)
+## [56. 合并区间](https://github.com/artintel/LeetCode/blob/master/56.%20%E5%90%88%E5%B9%B6%E5%8C%BA%E9%97%B4/source_code.cpp)
 
 > 给出一个区间的集合，请合并所有重叠的区间。
 
