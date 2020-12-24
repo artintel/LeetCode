@@ -1926,7 +1926,7 @@
 >if A[j] % 2 == 1: j += 2
 >```
 
-## [896. 单调数列](https://github.com/artintel/LeetCode/blob/master/922.%20%E6%8C%89%E5%A5%87%E5%81%B6%E6%8E%92%E5%88%97%E6%95%B0%E7%BB%84%20II/source_code.cpp)
+## [896. 单调数列](https://github.com/artintel/LeetCode/blob/master/896.%20%E5%8D%95%E8%B0%83%E6%95%B0%E5%88%97/source_code.cpp)
 
 > 如果数组是单调递增或单调递减的，那么它是单调的。
 >
