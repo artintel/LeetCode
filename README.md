@@ -1,12 +1,14 @@
 # LeetCode
 ## [1367.二叉树中的列表](https://github.com/artintel/LeetCode/blob/master/1367.%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%AD%E7%9A%84%E5%88%97%E8%A1%A8/main.cpp)
-> 考虑当前root节点和head的节点情况
-> 枚举二叉树中的每个节点为起点往下的路径是否有与链表相匹配的路径。 
-> 链表已经全部匹配完，匹配成功，返回 `true`
-> 二叉树访问到了空节点，匹配失败，返回 `false`
-> 当前匹配的二叉树上节点的值与链表节点的值不相等，匹配失败，返回 `false`
-> 前三种情况都不满足，说明匹配成功了一部分，我们需要继续递归匹配，如 `dfs(root->left, head->next)`
-> 匹配函数确定了，从根节点开始，如果当前节点匹配成功就直接返回 `true` ，否则继续找它的左儿子和右儿子是否满足，也就是代码中的 `dfs(root,head) || isSubPath(head,root->left) || isSubPath(head,root->right)` ，然后不断的递归调用。
+> 如果数组是单调递增或单调递减的，那么它是单调的。
+>
+> 如果对于所有 i <= j，A[i] <= A[j]，那么数组 A 是单调递增的。 如果对于所有 i <= j，A[i]> = A[j]，那么数组 A 是单调递减的。
+>
+> 当给定的数组 A 是单调数组时返回 true，否则返回 false。
+>
+> 来源：力扣（LeetCode）
+> 链接：https://leetcode-cn.com/problems/monotonic-array
+> 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 > 参考自：
 > 作者：LeetCode-Solution
@@ -1924,3 +1926,11 @@
 >if A[j] % 2 == 1: j += 2
 >```
 
+## [896. 单调数列](https://github.com/artintel/LeetCode/blob/master/922.%20%E6%8C%89%E5%A5%87%E5%81%B6%E6%8E%92%E5%88%97%E6%95%B0%E7%BB%84%20II/source_code.cpp)
+
+> 如果数组是单调递增或单调递减的，那么它是单调的。
+>
+> 如果对于所有 i <= j，A[i] <= A[j]，那么数组 A 是单调递增的。 如果对于所有 i <= j，A[i]> = A[j]，那么数组 A 是单调递减的。
+>
+> 当给定的数组 A 是单调数组时返回 true，否则返回 false。
+>
