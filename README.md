@@ -1954,7 +1954,7 @@
 >
 > 可查看官方代码。
 
-## [59. 螺旋矩阵](https://github.com/artintel/LeetCode/blob/master/57.%20%E6%8F%92%E5%85%A5%E5%8C%BA%E9%97%B4/source_code.cpp)
+## [59. 螺旋矩阵](https://github.com/artintel/LeetCode/blob/master/59.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II/source_code.cpp)
 
 > 给定一个正整数 *n*，生成一个包含 1 到 *n*2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。
 >
@@ -1972,7 +1972,7 @@
 >
 > 以及 var <= n*n;
 >
-> ```
+> ```C++
 >             for(int i = left; i <= right; i++) matrix[up][i] = var++;
 >             up++;
 >             for(int i = up; i <= down; i++) matrix[i][right] = var++;
