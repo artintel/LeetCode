@@ -1984,7 +1984,7 @@
 > ```
 >
 
-## [29. 两数相除](https://github.com/artintel/LeetCode/blob/master/59.%20%E8%9E%BA%E6%97%8B%E7%9F%A9%E9%98%B5II/source_code.cpp)
+## [29. 两数相除](https://github.com/artintel/LeetCode/blob/master/29.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E9%99%A4/source_code.cpp)
 
 > 给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
 >
