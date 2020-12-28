@@ -2016,7 +2016,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [50. Pow(x, n)](https://github.com/artintel/LeetCode/blob/master/29.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E9%99%A4/source_code.cpp)
+## [50. Pow(x, n)](https://github.com/artintel/LeetCode/blob/master/50.%20Pow(x%2C%20n)/source_code.cpp)
 
 > 实现 [pow(*x*, *n*)](https://www.cplusplus.com/reference/valarray/pow/) ，即计算 x 的 n 次幂函数。
 >
