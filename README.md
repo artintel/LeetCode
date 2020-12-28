@@ -2015,3 +2015,56 @@
 > 链接：https://leetcode-cn.com/problems/divide-two-integers/solution/po-su-de-xiang-fa-mei-you-wei-yun-suan-mei-you-yi-/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [50. Pow(x, n)](https://github.com/artintel/LeetCode/blob/master/29.%20%E4%B8%A4%E6%95%B0%E7%9B%B8%E9%99%A4/source_code.cpp)
+
+> 实现 [pow(*x*, *n*)](https://www.cplusplus.com/reference/valarray/pow/) ，即计算 x 的 n 次幂函数。
+>
+> ```
+> 示例 1:
+> 
+> 输入: 2.00000, 10
+> 输出: 1024.00000
+> 示例 2:
+> 
+> 输入: 2.10000, 3
+> 输出: 9.26100
+> 示例 3:
+> 
+> 输入: 2.00000, -2
+> 输出: 0.25000
+> 解释: 2-2 = 1/22 = 1/4 = 0.25
+> ```
+
+> **说明:**
+>
+> - -100.0 < *x* < 100.0
+> - *n* 是 32 位有符号整数，其数值范围是 [−231, 231 − 1] 。
+>
+> 解题的重点在于边界条件是否越界。和 幂的正负性 。
+>
+> ```C++
+>     double pow(double x, int n){
+>         if(n == 1) return x;
+>         if(n == -1) return 1 / x;
+>         if(n > 0){
+>             if( n % 2 == 1) return x * pow(x, n - 1);
+>             else return pow(x * x, n / 2);
+>         }
+>         else {
+>             if(n % 2 == -1) {
+>                 n += 1;
+>                 n = -n;
+>                 return 1 / (x * pow(x, n));
+>             }
+>             else {
+>                 n /= 2;
+>                 n = -n;
+>                 return 1 / (pow(x * x, n));
+>             }
+>         }
+>     }
+> ```
+>
+> 
+
