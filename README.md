@@ -2067,7 +2067,7 @@
 > ```
 >
 
-## [69. x的平方根](https://github.com/artintel/LeetCode/blob/master/50.%20Pow(x%2C%20n)/source_code.cpp)
+## [69. x的平方根](https://github.com/artintel/LeetCode/blob/master/69.%20x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9/source_code.cpp)
 
 > 计算并返回 *x* 的平方根，其中 *x* 是非负整数。
 >
