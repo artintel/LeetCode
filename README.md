@@ -2085,7 +2085,7 @@
 
 > 通过二分查找法找到对应数值
 
-## [74. 搜索二维矩阵](https://github.com/artintel/LeetCode/blob/master/69.%20x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9/source_code.cpp)
+## [74. 搜索二维矩阵](https://github.com/artintel/LeetCode/blob/master/74.%20%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5/source_code.cpp)
 
 > 编写一个高效的算法来判断 m x n 矩阵中，是否存在一个目标值。该矩阵具有如下特性：
 >
