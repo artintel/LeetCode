@@ -2103,4 +2103,36 @@
 > vector<int> a[index] = vector<vector<int>> A[index / weight][index % weight]
 > ```
 >
+
+## [81. 搜索旋转排序数组 II](https://github.com/artintel/LeetCode/blob/master/74.%20%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5/source_code.cpp)
+
+> 假设按照升序排序的数组在预先未知的某个点上进行了旋转。
+>
+> ( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。
+>
+> 编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。
+>
+> ```
+> 输入: nums = [2,5,6,0,0,1,2], target = 0
+> 输出: true
 > 
+> 输入: nums = [2,5,6,0,0,1,2], target = 3
+> 输出: false
+> ```
+
+> 解题思路：
+> 本题是需要使用二分查找，怎么分是关键，举个例子：
+>
+> - 第一类
+>   10111 和 11101 这种。此种情况下 nums[start] == nums[mid]，分不清到底是前面有序还是后面有序，此时 start++ 即可。相当于去掉一个重复的干扰项。
+> - 第二类
+>   2 3 4 5 6 7 1 这种，也就是 nums[start] < nums[mid]。此例子中就是 2 < 5；
+>   这种情况下，前半部分有序。因此如果 nums[start] <=target<nums[mid]，则在前半部分找，否则去后半部分找。
+> - 第三类
+>   6 7 1 2 3 4 5 这种，也就是 nums[start] > nums[mid]。此例子中就是 6 > 2；
+>   这种情况下，后半部分有序。因此如果 nums[mid] <target<=nums[end]。则在后半部分找，否则去前半部分找。
+>
+> 作者：reedfan
+> 链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/solution/zai-javazhong-ji-bai-liao-100de-yong-hu-by-reedfan/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
