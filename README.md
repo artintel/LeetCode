@@ -2104,7 +2104,7 @@
 > ```
 >
 
-## [81. 搜索旋转排序数组 II](https://github.com/artintel/LeetCode/blob/master/74.%20%E6%90%9C%E7%B4%A2%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5/source_code.cpp)
+## [81. 搜索旋转排序数组 II](https://github.com/artintel/LeetCode/blob/master/81.%20%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%20II/source_code.cpp)
 
 > 假设按照升序排序的数组在预先未知的某个点上进行了旋转。
 >
@@ -2124,13 +2124,13 @@
 > 本题是需要使用二分查找，怎么分是关键，举个例子：
 >
 > - 第一类
->   10111 和 11101 这种。此种情况下 nums[start] == nums[mid]，分不清到底是前面有序还是后面有序，此时 start++ 即可。相当于去掉一个重复的干扰项。
+>   10111 和 11101 这种。此种情况下 `nums[start] == nums[mid]`，分不清到底是前面有序还是后面有序，此时 `start++` 即可。相当于去掉一个重复的干扰项。
 > - 第二类
->   2 3 4 5 6 7 1 这种，也就是 nums[start] < nums[mid]。此例子中就是 2 < 5；
->   这种情况下，前半部分有序。因此如果 nums[start] <=target<nums[mid]，则在前半部分找，否则去后半部分找。
+>   2 3 4 5 6 7 1 这种，也就是 `nums[start] < nums[mid]`。此例子中就是 2 < 5；
+>   这种情况下，前半部分有序。因此如果 `nums[start] <= target < nums[mid]`，则在前半部分找，否则去后半部分找。
 > - 第三类
->   6 7 1 2 3 4 5 这种，也就是 nums[start] > nums[mid]。此例子中就是 6 > 2；
->   这种情况下，后半部分有序。因此如果 nums[mid] <target<=nums[end]。则在后半部分找，否则去前半部分找。
+>   6 7 1 2 3 4 5 这种，也就是 `nums[start] > nums[mid]`。此例子中就是 6 > 2；
+>   这种情况下，后半部分有序。因此如果 `nums[mid] < target <= nums[end]`。则在后半部分找，否则去前半部分找。
 >
 > 作者：reedfan
 > 链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/solution/zai-javazhong-ji-bai-liao-100de-yong-hu-by-reedfan/
