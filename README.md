@@ -2136,3 +2136,27 @@
 > 链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/solution/zai-javazhong-ji-bai-liao-100de-yong-hu-by-reedfan/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [剑指 Offer 12. 矩阵中的路径](https://github.com/artintel/LeetCode/blob/master/81.%20%E6%90%9C%E7%B4%A2%E6%97%8B%E8%BD%AC%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%20II/source_code.cpp)
+
+> 请设计一个函数，用来判断在一个矩阵中是否存在一条包含某字符串所有字符的路径。路径可以从矩阵中的任意一格开始，每一步可以在矩阵中向左、右、上、下移动一格。如果一条路径经过了矩阵的某一格，那么该路径不能再次进入该格子。例如，在下面的3×4的矩阵中包含一条字符串“bfce”的路径（路径中的字母用加粗标出）。
+>
+> [["a","**b**","c","e"],
+> ["s","**f**","**c**","s"],
+> ["a","d","**e**","e"]]
+>
+> 但矩阵中不包含字符串“abfb”的路径，因为字符串的第一个字符b占据了矩阵中的第一行第二个格子之后，路径不能再次进入这个格子。
+>
+> ```
+> 输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
+> 输出：true
+> 
+> 输入：board = [["a","b"],["c","d"]], word = "abcd"
+> 输出：false
+> ```
+
+> 此类题属于“回溯”的算法，应当考虑 “递归 + bfs” 的方法，需要注意的点是：
+>
+> - 一个和矩阵匹配的布尔向量 [row * cols + col]，用于记录对应位置是否属于所找路径
+> - Length 用于记录是否找全，边界条件 `word[Length] == '\0'`, 另外，Length 从 0 开始，若找到路径当前对应的位置或字符， Length++,  因为递归，即使当前是对应位置，如果下一轮所有方向都找不到对应的匹配字符，当前Length--，[row * cols + col] = false，回退
+
