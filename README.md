@@ -2160,3 +2160,50 @@
 > - 一个和矩阵匹配的布尔向量 [row * cols + col]，用于记录对应位置是否属于所找路径
 > - Length 用于记录是否找全，边界条件 `word[Length] == '\0'`, 另外，Length 从 0 开始，若找到路径当前对应的位置或字符， Length++,  因为递归，即使当前是对应位置，如果下一轮所有方向都找不到对应的匹配字符，当前Length--，[row * cols + col] = false，回退
 
+## [3. 无重复字符的最长子串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2012.%20%E7%9F%A9%E9%98%B5%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84/source_code.cpp)
+
+> 给定一个字符串，请你找出其中不含有重复字符的 **最长子串** 的长度。
+>
+> ```
+> 输入: s = "abcabcbb"
+> 输出: 3 
+> 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
+> 
+> 输入: s = "bbbbb"
+> 输出: 1
+> 解释: 因为无重复字符的最长子串是 "b"，所以其长度为 1。
+> 
+> 输入: s = "pwwkew"
+> 输出: 3
+> 解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
+>      请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
+> 
+> 输入: s = ""
+> 输出: 0
+> ```
+
+> 采用了动态规划算法，当查询当前位置时，以 `dp[i - 1]` 的长度为准，即前一个字符，前一个字符作为最长无重复子串的末尾，遍历完前一个字符所代表的最长字串，如果没有字符和当前字符相等，那么 `dp[i] = dp[i - 1] + 1`, 否则，如遇到有和自己相同的字符，那么通过前最长子串的长度 - interval + 1 即为 dp[i] 的值。其中 
+>
+> `interval`: 从 `s[i - 1]` 开始往前走，每走一格 `interval = dp[i - 1] - 1;`
+>
+> ```cpp
+> for(int i = 1; i <= n ; i++){
+> 	if( i == 1 ) {
+> 		MAX = max(MAX, dp[i]);
+> 		continue;
+> 	}
+> 	int interval = dp[i - 1];
+> 	int j = i - 1;
+> 	while(interval > 0){
+> 		if(s[i - 1] != s[j - 1]){
+> 			j--;
+> 			interval--;
+> 		}
+> 	else break;
+> 	}
+> 	if(interval == 0) dp[i] = dp[i - 1] + 1;
+> 	else dp[i] = dp[i - 1] - interval + 1;
+> 	MAX = max(MAX, dp[i]);
+> }
+> ```
+
