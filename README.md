@@ -2222,7 +2222,7 @@
 > 回溯算法：机器人从坐标 (0, 0) 开始移动。当它准备进入坐标为 (i, j) 的格子时，通过检查坐标的数位和来判断机器人是否能够进入。如果机器人能够进入坐标为 (i, j) 的格子，则再判断它能否进入 4 个相邻的格子 (i, j - 1), (i, j + 1), (i - 1, j), (i + 1, j)。
 >
 
-## [22. 括号生成](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2013.%20%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%90%E5%8A%A8%E8%8C%83%E5%9B%B4/source_code.cpp)
+## [22. 括号生成](https://github.com/artintel/LeetCode/blob/master/22.%20%E6%8B%AC%E5%8F%B7%E7%94%9F%E6%88%90/source_code.cpp)
 
 > 数字 *n* 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 **有效的** 括号组合。
 >
