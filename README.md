@@ -2258,7 +2258,7 @@
 > 尽可能多地剪去长度为 3 的绳子段。
 >
 
-## [剑指 Offer 14-II. 剪绳子](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2014%20-%20I.%20%E5%89%AA%E7%BB%B3%E5%AD%90/source_code.cpp)
+## [剑指 Offer 14-II. 剪绳子](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2014%20-%20II.%20%E5%89%AA%E7%BB%B3%E5%AD%90/source_code.cpp)
 
 > 给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 k[0],k[1]...k[m - 1] 。请问 k[0]*k[1]*...*k[m - 1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
 >
