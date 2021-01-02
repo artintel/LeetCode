@@ -2291,5 +2291,57 @@
 > return (int)result_2 * result_3 % 1000000007;
 > ```
 >
+
+## [46. 全排列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2014%20-%20II.%20%E5%89%AA%E7%BB%B3%E5%AD%90/source_code.cpp)
+
+> 给定一个 **没有重复** 数字的序列，返回其所有可能的全排列
+>
+> ```
+> 输入: [1,2,3]
+> 输出:
+> [
+>   [1,2,3],
+>   [1,3,2],
+>   [2,1,3],
+>   [2,3,1],
+>   [3,1,2],
+>   [3,2,1]
+> ]
+> ```
+
+> DFS(回溯)：
+>
+> 做这道题我遇到的问题：
+>
+> 知道会用到回溯，DFS的思想，但是代码写不出来。主要原因在于不知道在何处写递归算法
+>
+> 定义变量：
+>
+> - `vector<vector<int>> ans;`
+> - `vector<int> stack`;
+> - `int length = nums.size();`
+> - `vector<bool> flag(length, false);`
+>
+> `depth` 代表的遍历的层数，该题可以理解为对一颗树的深度遍历
+>
+> DFS:
+>
+> ```cpp
+> void dfs(vector<int>& nums,vector<vector<int>>& ans,vector<bool>& flag, vector<int>& temp, int length, int depth){
+> 	if( depth == length ) { // 深度到达最低一层，边界条件
+>             ans.emplace_back(temp);
+>             return;
+>         }
+>      for(int i = 0; i < length; i++){
+>           if( flag[i] == true ) continue; // 如果已经进入 temp_stack，跳过
+>           temp.emplace_back(nums[i]); // 否则，进入 temp_stack
+>           flag[i] = true; // 置 flag[i] = true; 代表已经遍历
+>           dfs(nums, ans, flag, temp, length, depth + 1);// 进入下一层，很重要，我就是不知道在这里
+>           temp.pop_back();// 递归结束的返回点
+>           flag[i] = false;// 将当前置为 false, 未遍历
+>      }
+> }
+> ```
+>
 > 
 
