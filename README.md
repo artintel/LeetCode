@@ -2292,7 +2292,7 @@
 > ```
 >
 
-## [46. 全排列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2014%20-%20II.%20%E5%89%AA%E7%BB%B3%E5%AD%90/source_code.cpp)
+## [46. 全排列](https://github.com/artintel/LeetCode/blob/master/46.%20%E5%85%A8%E6%8E%92%E5%88%97/source_code.cpp)
 
 > 给定一个 **没有重复** 数字的序列，返回其所有可能的全排列
 >
