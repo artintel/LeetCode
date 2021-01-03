@@ -2391,5 +2391,10 @@
 
 > 由于互为字母异位词的两个字符串包含的字母相同，因此对两个字符串分别进行排序之后得到的字符串一定是相同的，故可以将排序之后的字符串作为哈希表的键。
 
+## [剑指 Offer 16. 数值的整数次方](https://github.com/artintel/LeetCode/blob/master/49.%20%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/source_code.cpp)
+
+> 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
+>
+
 
 
