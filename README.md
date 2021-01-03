@@ -2375,7 +2375,7 @@
 >
 > 以此为基准，将数组分为 a, b 两组，并通过这个不为 0 的位置进行异或，这两个不同的数字必定被分在不同的组，而其他出现两次的数字必定分在同一个组，因为异或，出现两次的数字异或结果为 0
 
-## [49. 字母异位词分组](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2056%20-%20I.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/source_code.cpp)
+## [49. 字母异位词分组](https://github.com/artintel/LeetCode/blob/master/49.%20%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D%E5%88%86%E7%BB%84/source_code.cpp)
 
 > 给定一个字符串数组，将字母异位词组合在一起。字母异位词指字母相同，但排列不同的字符串。
 >
