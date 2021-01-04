@@ -2396,7 +2396,7 @@
 > 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
 >
 
-## [62. 不同路径](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2016.%20%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/source_code.cpp)
+## [62. 不同路径](https://github.com/artintel/LeetCode/blob/master/62.%20%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/source_code.cpp)
 
 > 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。
 >
