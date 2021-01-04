@@ -2396,5 +2396,43 @@
 > 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
 >
 
+## [62. 不同路径](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2016.%20%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/source_code.cpp)
+
+> 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。
+>
+> 机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish” ）。
+>
+> 问总共有多少条不同的路径？
+>
+> ```
+> 输入：m = 3, n = 7
+> 输出：28
+> 
+> 输入：m = 3, n = 2
+> 输出：3
+> 解释：
+> 从左上角开始，总共有 3 条路径可以到达右下角。
+> 1. 向右 -> 向右 -> 向下
+> 2. 向右 -> 向下 -> 向右
+> 3. 向下 -> 向右 -> 向右
+> 
+> 输入：m = 7, n = 3
+> 输出：28
+> 
+> 输入：m = 3, n = 3
+> 输出：6
+> ```
+
+> 解法1：动态规划 `dp[i][j] = dp[i - 1][j] + dp[i][j - 1];`
+>
+> 解法2：组合数学
+>
+> 从左上角到右下角的过程中，我们需要移动 m+n-2m+n−2 次，其中有 m-1m−1 次向下移动，n-1n−1 次向右移动。因此路径的总数，就等于从 m+n-2m+n−2 次移动中选择 m-1m−1 次向下移动的方案数，即组合数：C(m - 1, m + n - 2)
+>
+> 作者：LeetCode-Solution
+> 链接：https://leetcode-cn.com/problems/unique-paths/solution/bu-tong-lu-jing-by-leetcode-solution-hzjf/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
 
 
