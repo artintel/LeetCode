@@ -2434,7 +2434,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [101. 对称二叉树](https://github.com/artintel/LeetCode/blob/master/62.%20%E4%B8%8D%E5%90%8C%E8%B7%AF%E5%BE%84/source_code.cpp)
+## [101. 对称二叉树](https://github.com/artintel/LeetCode/blob/master/101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
 
 > 给定一个二叉树，检查它是否是镜像对称的。
 >
