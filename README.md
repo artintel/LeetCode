@@ -2471,7 +2471,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [104. 二叉树的最大深度](https://github.com/artintel/LeetCode/blob/master/101.%20%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
+## [104. 二叉树的最大深度](https://github.com/artintel/LeetCode/blob/master/104.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E5%A4%A7%E6%B7%B1%E5%BA%A6/source_code.cpp)
 
 > 给定一个二叉树，找出其最大深度。
 >
