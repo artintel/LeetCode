@@ -2513,7 +2513,7 @@
 
 > DP算法；二维数组中的每一个都保存了所有方向到该方向的最小路径和
 
-## [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](https://github.com/artintel/LeetCode/blob/master/64.%20%E6%9C%80%E5%B0%8F%E8%B7%AF%E5%BE%84%E5%92%8C/source_code.cpp)
+## [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2021.%20%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/source_code.cpp)
 
 > 输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数位于数组的前半部分，所有偶数位于数组的后半部分。
 >
