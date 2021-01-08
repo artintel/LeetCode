@@ -2523,7 +2523,7 @@
 > 注：[3,1,2,4] 也是正确的答案之一。
 > ```
 
-## [78. 子集](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2021.%20%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/source_code.cpp)
+## [78. 子集](https://github.com/artintel/LeetCode/blob/master/78.%20%E5%AD%90%E9%9B%86/source_code.cpp)
 
 > 给你一个整数数组 `nums` ，返回该数组所有可能的子集（幂集）。解集不能包含重复的子集。
 >
