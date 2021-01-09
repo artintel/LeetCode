@@ -2584,3 +2584,49 @@
 > 链接：https://leetcode-cn.com/problems/subsets/solution/zi-ji-by-leetcode-solution/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [206. 反转链表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2021.%20%E8%B0%83%E6%95%B4%E6%95%B0%E7%BB%84%E9%A1%BA%E5%BA%8F%E4%BD%BF%E5%A5%87%E6%95%B0%E4%BD%8D%E4%BA%8E%E5%81%B6%E6%95%B0%E5%89%8D%E9%9D%A2/source_code.cpp)
+
+> 递归和迭代思想是一样的，这里说递归
+>
+> 1. 递归边界条件 `if( head->next == nullptr ) return head;`
+>
+> 2. 递归体 `dfs(head->next);`
+>
+> 3. 递归体结束，说明当前节点之后的链表都已经发生了反转，那么执行 
+>
+>    `dfs(head->next)->next = head;`
+>
+>    `return head;`
+>
+> 上代码解释：
+>
+> ```cpp
+> class Solution {
+> public:
+>     LinkNode* dfs( LinkNode* head ){
+>         if( head->next == nullptr ){ //边界条件
+>             return head;
+>         }
+>         dfs(head->next)->next = head; // 递归返回的是当前节点之后已经反转好的链表最后一个节点
+>         						    // 所以会通过 将 dfs(...)的返回节点的next指向当前节点
+>          						    // 完成当前节点的反转
+>         head->next = nullptr;		  // 最后将当前的 next 置为 nullptr;
+>         return head;
+>     }
+>     LinkNode* reverse( LinkNode* head ){
+>         if(head == nullptr) return nullptr;
+>         if(head->next == nullptr ) return head;
+>         LinkNode* temp = head;
+>         while(temp->next){ // 考虑到main()的验证，通过while找到原始链表的最后一个节点
+>             temp = temp->next;
+>         }
+>         dfs(head);
+>         return temp; // 返回原始链表的最后一个节点，也是反转后的头节点；
+>     }
+> };
+> ```
+>
+> 
+
+## 
