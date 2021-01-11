@@ -2661,7 +2661,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [79. 单词搜索](https://github.com/artintel/LeetCode/blob/master/47.%20%E5%85%A8%E6%8E%92%E5%88%97%20II/source_code.cpp)
+## [79. 单词搜索](https://github.com/artintel/LeetCode/blob/master/79.%20%E5%8D%95%E8%AF%8D%E6%90%9C%E7%B4%A2/source_code.cpp)
 
 > 给定一个二维网格和一个单词，找出该单词是否存在于网格中。
 >
