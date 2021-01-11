@@ -2660,3 +2660,48 @@
 > 链接：https://leetcode-cn.com/problems/permutations-ii/solution/quan-pai-lie-ii-by-leetcode-solution/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [79. 单词搜索](https://github.com/artintel/LeetCode/blob/master/47.%20%E5%85%A8%E6%8E%92%E5%88%97%20II/source_code.cpp)
+
+> 给定一个二维网格和一个单词，找出该单词是否存在于网格中。
+>
+> 单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。
+>
+> ```cpp
+> board =
+> [
+>   ['A','B','C','E'],
+>   ['S','F','C','S'],
+>   ['A','D','E','E']
+> ]
+> 
+> 给定 word = "ABCCED", 返回 true
+> 给定 word = "SEE", 返回 true
+> 给定 word = "ABCB", 返回 false
+> ```
+
+> 回溯算法：
+>
+> 1. 二维网格当前字符和单词对应位置的字符相等，`length++, flag[row x cols + col] = true`，并且迭代之后四个方向，查询`board[i][j] == word[length] ?`
+> 2. 如果四个方向都不能和单词之后的单词对应，那么 `length--, flag[row x cols + col] = false;`
+>
+> 边界条件：
+>
+> ```cpp
+> if(length == n) return true;
+>         if(row < 0 || col < 0 || row >= rows || col >= cols || flag[row * cols + col] == true || board[row][col] != word[length]) return false;
+> ```
+>
+> 因为找的是网格中是否存在有路径使得对应的上单词
+>
+> ```cpp
+> for(int i = 0; i < m; i++){
+>     for(int j = 0; j < n; j++){
+>         if(trace_back(board, word, flag, i, j, m, n, 0, Length)){ //从不同的位置进行查询
+>             return true;
+>         }
+>     }
+> }
+> ```
+>
+> 
