@@ -1,7 +1,7 @@
 /*
  * @Author: Mayc
  * @Date: 2021-01-12 09:25:14
- * @LastEditTime: 2021-01-12 09:42:35
+ * @LastEditTime: 2021-01-12 09:55:59
  * @FilePath: \undefinedd:\VSC++&GO\LeetCode\89. 格雷编码\source_code.cpp
  * @这是一个漂亮的注释头
  */
@@ -36,8 +36,6 @@ private:
             if (dfs(n, N, res, st)) {
                 return true;
             }
-            res.pop_back();
-            st.erase(next);
         }
 
         return false;
