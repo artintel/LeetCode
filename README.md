@@ -2705,7 +2705,7 @@
 > ```
 >
 
-## [89. 格雷编码](https://github.com/artintel/LeetCode/blob/master/79.%20%E5%8D%95%E8%AF%8D%E6%90%9C%E7%B4%A2/source_code.cpp)
+## [89. 格雷编码](https://github.com/artintel/LeetCode/blob/master/89.%20%E6%A0%BC%E9%9B%B7%E7%BC%96%E7%A0%81/source_code.cpp)
 
 > 格雷编码是一个二进制数字系统，在该系统中，两个连续的数值仅有一个位数的差异。
 >
