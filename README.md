@@ -2753,3 +2753,22 @@
 > 链接：https://leetcode-cn.com/problems/gray-code/solution/gray-code-jing-xiang-fan-she-fa-by-jyd/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [90. 子集 II](https://github.com/artintel/LeetCode/blob/master/79.%20%E5%8D%95%E8%AF%8D%E6%90%9C%E7%B4%A2/source_code.cpp)
+
+> 给定一个可能包含重复元素的整数数组 ***nums***，返回该数组所有可能的子集（幂集）。
+>
+> **说明：**解集不能包含重复的子集。
+>
+> ```cpp
+> 输入: [1,2,2]
+> 输出:
+> [
+>   [2],
+>   [1],
+>   [1,2,2],
+>   [2,2],
+>   [1,2],
+>   []
+> ]
+> ```
