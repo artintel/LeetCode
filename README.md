@@ -2785,7 +2785,7 @@
 > 输出：[1,2,3,4,8,12,11,10,9,5,6,7]
 > ```
 
-## [93. 复原IP地址](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2029.%20%E9%A1%BA%E6%97%B6%E9%92%88%E6%89%93%E5%8D%B0%E7%9F%A9%E9%98%B5/source_code.cpp)
+## [93. 复原IP地址](https://github.com/artintel/LeetCode/blob/master/93.%20%E5%A4%8D%E5%8E%9FIP%E5%9C%B0%E5%9D%80/source_code.cpp)
 
 > 给定一个只包含数字的字符串，复原它并返回所有可能的 IP 地址格式。
 >
