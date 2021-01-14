@@ -2831,3 +2831,44 @@
 > x 正常如栈
 > ```
 
+## [剑指 Offer 31. 栈的压入、弹出序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2030.%20%E5%8C%85%E5%90%ABmin%E5%87%BD%E6%95%B0%E7%9A%84%E6%A0%88/source_code.cpp)
+
+> 输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如，序列 {1,2,3,4,5} 是某栈的压栈序列，序列 {4,5,3,2,1} 是该压栈序列对应的一个弹出序列，但 {4,3,5,1,2} 就不可能是该压栈序列的弹出序列。
+>
+> ```
+> 输入：pushed = [1,2,3,4,5], popped = [4,5,3,2,1]
+> 输出：true
+> 解释：我们可以按以下顺序执行：
+> push(1), push(2), push(3), push(4), pop() -> 4,
+> push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
+> 
+> 输入：pushed = [1,2,3,4,5], popped = [4,3,5,1,2]
+> 输出：false
+> 解释：1 不能在 2 之前弹出。
+> ```
+
+> 思路：初始化一个中间栈，按给出的压栈顺序进行压栈。在进行压栈操作的时候需要查看当前值和压出栈的对应关系:
+>
+> - popped[index] == stack.top() ? 如果是，stack.pop(), index++；如果不是继续下一个比较
+> - popped[index] == pushed[i],  i++, index++, 不进行压栈操作。
+> - popped[index] != pushed[i], pushed[i] 入栈， i++;
+>
+> 边界条件：当 i == popped.size(), 说明已经遍历结束，即压栈结束
+>
+> 如果此时 stack 为空，说明刚好匹配，可直接 return true;
+>
+> 否则
+>
+> ```cpp
+> while(!stack.empty()){
+>     if( stack.top() == popped[index] ){ // 出栈入栈顺序匹配；
+>         stack.pop();
+>         index++; // 查看接下来的出栈入栈值是否匹配
+>     }
+>     else return false; // 一旦不等，直接返回 false;
+> }
+> return true;
+> ```
+>
+> 
+
