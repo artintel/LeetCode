@@ -2950,3 +2950,17 @@
 >   链接：https://leetcode-cn.com/problems/palindrome-partitioning/solution/131-fen-ge-hui-wen-chuan-hui-su-sou-suo-suan-fa-xi/
 >   来源：力扣（LeetCode）
 >   著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [剑指 Offer 32 - I. 从上到下打印二叉树](https://github.com/artintel/LeetCode/blob/master/131.%20%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2/source_code.cpp)
+
+> 从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。
+>
+> 返回 *s* 所有可能的分割方案。
+>
+> ```
+> 给定二叉树: [3,9,20,null,null,15,7],
+> 返回：[3,9,20,15,7]
+> ```
+
+> 迭代，利用队列先进先出的特性，每次从队列取出一个结点，且当该节点有子结点时，将存在左右子节点按顺序放入队列，再读取取出结点的值
+
