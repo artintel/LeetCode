@@ -2870,3 +2870,83 @@
 > return true;
 > ```
 
+## [131. 分割回文子串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2031.%20%E6%A0%88%E7%9A%84%E5%8E%8B%E5%85%A5%E3%80%81%E5%BC%B9%E5%87%BA%E5%BA%8F%E5%88%97/source_code.cpp)
+
+> 给定一个字符串 *s*，将 *s* 分割成一些子串，使每个子串都是回文串。
+>
+> 返回 *s* 所有可能的分割方案。
+>
+> ```
+> 输入: "aab"
+> 输出:
+> [
+>   ["aa","b"],
+>   ["a","a","b"]
+> ]
+> ```
+
+> 回溯三部曲：
+>
+> - 递归函数参数
+>
+>   全局变量数组path存放切割后回文的子串，二维数组result存放结果集。 （这两个参数可以放到函数参数里）
+>
+>   ```cpp
+>   vector<vector<string>> result;
+>   vector<string> path;
+>   void backtracking( const string& s, int startIndex ){}
+>   ```
+>
+> - 终止条件
+>
+>   ```cpp
+>   void backtracking (const string& s, int startIndex) {
+>       // 如果起始位置已经大于s的大小，说明已经找到了一组分割方案了
+>       if (startIndex >= s.size()) {
+>           result.push_back(path);
+>           return;
+>       }
+>   }
+>   ```
+>
+>   在 `for (int i = startIndex; i < s.size(); i++)` 循环中，我们定义了起始位置 `startIndex`，那么 `[startIndex, i]` 就是要截取的子串。
+>
+>   首先判断这个子串是不是回文，如果是回文，就加入在`vector<string> path`中，path用来记录切割过的回文子串。
+>
+>   ```cpp
+>   for (int i = startIndex; i < s.size(); i++) {
+>       if (isPalindrome(s, startIndex, i)) { // 是回文子串
+>           // 获取[startIndex,i]在s中的子串
+>           string str = s.substr(startIndex, i - startIndex + 1);
+>           path.push_back(str);
+>       } else {                // 如果不是则直接跳过
+>           continue;
+>       }
+>       backtracking(s, i + 1); // 寻找i+1为起始位置的子串
+>       path.pop_back();        // 回溯过程，弹出本次已经填在的子串
+>   }
+>   ```
+>
+>   **注意切割过的位置，不能重复切割，所以，backtracking(s, i + 1); 传入下一层的起始位置为i + 1**
+>
+> - 回溯算法模板
+>
+>   ```Cpp
+>   void backtracking(参数) {
+>       if (终止条件) {
+>           存放结果;
+>           return;
+>       }
+>   
+>       for (选择：本层集合中元素（树中节点孩子的数量就是集合的大小）) {
+>           处理节点;
+>           backtracking(路径，选择列表); // 递归
+>           回溯，撤销处理结果
+>       }
+>   }
+>   ```
+>
+>   作者：carlsun-2
+>   链接：https://leetcode-cn.com/problems/palindrome-partitioning/solution/131-fen-ge-hui-wen-chuan-hui-su-sou-suo-suan-fa-xi/
+>   来源：力扣（LeetCode）
+>   著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
