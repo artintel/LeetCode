@@ -2964,7 +2964,7 @@
 
 > 迭代，利用队列先进先出的特性，每次从队列取出一个结点，且当该节点有子结点时，将存在左右子节点按顺序放入队列，再读取取出结点的值
 
-## [剑指 Offer 32 - II. 从上到下打印二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2032%20-%20I.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
+## [剑指 Offer 32 - II. 从上到下打印二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2032%20-%20II.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
 
 > 从上到下按层打印二叉树，同一层的节点按从左到右的顺序打印，每一层打印到一行。
 >
