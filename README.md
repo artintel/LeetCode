@@ -2870,7 +2870,7 @@
 > return true;
 > ```
 
-## [131. 分割回文子串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2031.%20%E6%A0%88%E7%9A%84%E5%8E%8B%E5%85%A5%E3%80%81%E5%BC%B9%E5%87%BA%E5%BA%8F%E5%88%97/source_code.cpp)
+## [131. 分割回文子串](https://github.com/artintel/LeetCode/blob/master/131.%20%E5%88%86%E5%89%B2%E5%9B%9E%E6%96%87%E4%B8%B2/source_code.cpp)
 
 > 给定一个字符串 *s*，将 *s* 分割成一些子串，使每个子串都是回文串。
 >
