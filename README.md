@@ -2992,7 +2992,7 @@
 
 > 状态机
 
-## [1688. 比赛中的配对次数](https://github.com/artintel/LeetCode/blob/master/%E7%89%9B%E5%AE%A2%E7%BC%96%E7%A8%8B%E5%AD%97%E8%8A%82%E5%8E%9F%E9%A2%981/source_code.cpp)
+## [1688. 比赛中的配对次数](https://github.com/artintel/LeetCode/blob/master/1688.%20%E6%AF%94%E8%B5%9B%E4%B8%AD%E7%9A%84%E9%85%8D%E5%AF%B9%E6%AD%A4%E5%A4%84/source_code.cpp)
 
 > 给你一个整数 n ，表示比赛中的队伍数。比赛遵循一种独特的赛制：
 >
