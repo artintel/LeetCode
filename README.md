@@ -2982,3 +2982,13 @@
 
 > 广度遍历，用两个变量保存当前层还剩多少没有输出的，另一个保存下一层有多少输出结点
 
+## [牛客编程字节原题](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2032%20-%20II.%20%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
+
+> AABB -> AAB
+>
+> AABBCC -> AABCC
+>
+> AAA -> AA
+
+> 状态机
+
