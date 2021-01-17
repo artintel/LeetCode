@@ -3029,7 +3029,7 @@
 >
 > `return n / 2 + trace_back( n / 2 );`
 
-## [306. 累加数](https://github.com/artintel/LeetCode/blob/master/1688.%20%E6%AF%94%E8%B5%9B%E4%B8%AD%E7%9A%84%E9%85%8D%E5%AF%B9%E6%AD%A4%E5%A4%84/source_code.cpp)
+## [306. 累加数](https://github.com/artintel/LeetCode/blob/master/306.%20%E7%B4%AF%E5%8A%A0%E6%95%B0/source_code.cpp)
 
 > 累加数是一个字符串，组成它的数字可以形成累加序列。
 >
