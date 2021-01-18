@@ -3068,7 +3068,7 @@
 > 来源：CSDN
 > 链接：https://www.cnblogs.com/patatoforsyj/p/9699351.html
 
-## [257. 计算各个位数不同的数字个数](https://github.com/artintel/LeetCode/blob/master/306.%20%E7%B4%AF%E5%8A%A0%E6%95%B0/source_code.cpp)
+## [257. 计算各个位数不同的数字个数](https://github.com/artintel/LeetCode/blob/master/357.%20%E8%AE%A1%E7%AE%97%E5%90%84%E4%B8%AA%E4%BD%8D%E6%95%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%AA%E6%95%B0/source_code.cpp)
 
 > 给定一个**非负**整数 n，计算各位数字都不同的数字 x 的个数，其中 0 ≤ x < 10n 。
 >
