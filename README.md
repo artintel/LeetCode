@@ -3118,3 +3118,29 @@
 >
 > 最终结果为  `count = count1 + count2 + count3 + count4 == 10 + 81 + 648 + count4`
 
+## [剑指 Offer 36. 二叉搜索树与双向链表](https://github.com/artintel/LeetCode/blob/master/357.%20%E8%AE%A1%E7%AE%97%E5%90%84%E4%B8%AA%E4%BD%8D%E6%95%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%AA%E6%95%B0/source_code.cpp)
+
+> 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。
+>
+> 我们希望可以就地完成转换操作。当转化完成以后，树中节点的左指针需要指向前驱，树中节点的右指针需要指向后继。还需要返回链表中的第一个节点的指针。
+
+> 利用中序遍历来求，维护一个指向当前结点之前最大的结点`*Nodelist`, 初始化为 `nullptr`,
+>
+> 进行中序遍历，(函数参数设置中 `Nodelist` 应为 `dfs(Node* root, Node** Nodelist)`)
+>
+> ```cpp
+> if(root->left){
+>     dfs(root->left, Nodelist);
+> }
+> if(*Nodelist != nullptr){
+>     Nodelist->right = root;
+> }
+> Nodelist = root; // 这里也解决了当 Nodelist 为空时的情况，也是将 Nodelist 赋予新的最大值
+> if(root->right){
+>     dfs(root->right, Nodelist);
+> }
+> //函数结束
+> ```
+>
+> 
+
