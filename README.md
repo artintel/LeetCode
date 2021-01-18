@@ -3118,7 +3118,7 @@
 >
 > 最终结果为  `count = count1 + count2 + count3 + count4 == 10 + 81 + 648 + count4`
 
-## [剑指 Offer 36. 二叉搜索树与双向链表](https://github.com/artintel/LeetCode/blob/master/357.%20%E8%AE%A1%E7%AE%97%E5%90%84%E4%B8%AA%E4%BD%8D%E6%95%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E6%95%B0%E5%AD%97%E4%B8%AA%E6%95%B0/source_code.cpp)
+## [剑指 Offer 36. 二叉搜索树与双向链表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2036.%20%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%8E%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/source_code.cpp)
 
 > 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。
 >
