@@ -3068,3 +3068,53 @@
 > 来源：CSDN
 > 链接：https://www.cnblogs.com/patatoforsyj/p/9699351.html
 
+## [257. 计算各个位数不同的数字个数](https://github.com/artintel/LeetCode/blob/master/306.%20%E7%B4%AF%E5%8A%A0%E6%95%B0/source_code.cpp)
+
+> 给定一个**非负**整数 n，计算各位数字都不同的数字 x 的个数，其中 0 ≤ x < 10n 。
+>
+> ```
+> 输入: 2
+> 输出: 91 
+> 解释: 答案应为除去 11,22,33,44,55,66,77,88,99 外，在 [0,100) 区间内的所有数字。
+> ```
+
+> 回溯算法：
+>
+> 定义了一个 `vector<int> flag(10, 0)` 的容器，用以保存当前数字中哪些已经被用过了(避免重复)，用 `int count` 保存一共有多少个数字。
+>
+> 为方便我们直接从二位数开始遍历回溯( n == 1 的时候直接返回 10 )
+>
+> ```cpp
+> while (N--) {
+> 	for (int i = 1; i < 10; i++) {
+> 		flag[i] = 1;
+> 		trace_back(flag, N + 1, count, n);
+> 		flag[i] = 0;
+> 	}
+> }
+> ```
+>
+> trace_back 回溯函数， 当 start 也就是 第二个参数满足 `start == n` 代表一个数字已经找到， `count++;`
+>
+> ```cpp
+> for (int i = 0; i < 10; i++) {
+> 	if (flag[i] == 1) continue; // 当前数字已经使用过
+> 	flag[i] = 1; // 未使用过，此次使用标记为以使用
+> 	trace_back(flag, start + 1, count, n);// 进入下一位的遍历
+> 	flag[i] = 0;// 跳出，重置为 0 ，寻找另一个数字的构建
+> }
+> ```
+>
+> 组合数学：
+>
+> ```cpp
+> n == 0 return 1;
+> n == 1 return 10;
+> ```
+>
+> 之后是公式 -- 拿 `n == 4` 为例
+>
+> $count_4 = C_{9}^1 + C_{9}^1 + C_{8}^1 + C_{7}^1$
+>
+> 最终结果为  `count = count1 + count2 + count3 + count4 == 10 + 81 + 648 + count4`
+
