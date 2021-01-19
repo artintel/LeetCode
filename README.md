@@ -3155,7 +3155,7 @@
 
 > 维护一个栈，遍历 `string s`, 当当前符号和栈顶元素匹配，出栈，否则入栈。最后检查 `stack.empty()` 为真即为有效括号集，为假则不是有效返回 `false`
 
-## [297. 二叉树的序列化与反序列化](https://github.com/artintel/LeetCode/blob/master/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/source_code.cpp)
+## [297. 二叉树的序列化与反序列化](https://github.com/artintel/LeetCode/blob/master/297.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/source_code.cpp)
 
 > - 序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。
 >
