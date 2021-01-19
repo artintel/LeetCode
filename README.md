@@ -3143,7 +3143,7 @@
 > ```
 >
 
-## [20. 有效的括号](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2036.%20%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%8E%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [20. 有效的括号](https://github.com/artintel/LeetCode/blob/master/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/source_code.cpp)
 
 > 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。
 >
