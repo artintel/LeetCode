@@ -3155,3 +3155,44 @@
 
 > 维护一个栈，遍历 `string s`, 当当前符号和栈顶元素匹配，出栈，否则入栈。最后检查 `stack.empty()` 为真即为有效括号集，为假则不是有效返回 `false`
 
+## [297. 二叉树的序列化与反序列化](https://github.com/artintel/LeetCode/blob/master/20.%20%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/source_code.cpp)
+
+> - 序列化是将一个数据结构或者对象转换为连续的比特位的操作，进而可以将转换后的数据存储在一个文件或者内存中，同时也可以通过网络传输到另一个计算机环境，采取相反方式重构得到原数据。
+>
+>   请设计一个算法来实现二叉树的序列化与反序列化。这里不限定你的序列 / 反序列化算法执行逻辑，你只需要保证一个二叉树可以被序列化为一个字符串并且将这个字符串反序列化为原始的树结构 (不限构造序列方法)
+>
+>   ```
+>   你可以将以下二叉树：
+>   
+>       1
+>      / \
+>     2   3
+>        / \
+>       4   5
+>   
+>   序列化为 "[1,2,3,null,null,4,5]"
+>   ```
+
+> 对于正序列，按照前序遍历的方法将每个结点的值放入 `string` 中，当遇到叶子结点，通过前序遍历会遇到两个 `null`, 设置为 `&` 放入 `string`，并回溯。以此类推，用逗号隔开
+>
+> 难点：反序列。自己维护了一个 `queue<string>`，将序列中的 `num` 和 `null` 分别`push`到队列中。通过`_deserialize()` 进行反序列
+>
+> ```Cpp
+> void _deserialize(TreeNode** root, queue<string>& temp){
+>     if( temp.empty() ) return;
+>     string s = temp.front();
+>     if( s != "&" ){
+>         *root = new TreeNode(stoi(s));
+>         temp.pop(); // 推出当前已经构造成结点的元素
+>         _deserialize(&(*root)->left, temp);
+>         _deserialize(&(*root)->right, temp);
+>     }
+>     else {
+>         temp.pop(); // 将空结点推出
+>         return;
+>     }
+> }
+> ```
+>
+> 
+
