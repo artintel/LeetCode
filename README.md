@@ -3195,7 +3195,7 @@
 > ```
 >
 
-## [96. 不同的二叉搜索树](https://github.com/artintel/LeetCode/blob/master/297.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96/source_code.cpp)
+## [96. 不同的二叉搜索树](https://github.com/artintel/LeetCode/blob/master/96.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
 
 > - 给定一个整数 *n*，求以 1 ... *n* 为节点组成的二叉搜索树有多少种？
 >
