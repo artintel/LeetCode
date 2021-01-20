@@ -3230,7 +3230,7 @@
 >
 > 卡塔兰数 $C_n$
 
-## [剑指 Offer 38. 字符串的排列](https://github.com/artintel/LeetCode/blob/master/96.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
+## [剑指 Offer 38. 字符串的排列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2038.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/source_code.cpp)
 
 > 你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
 >
