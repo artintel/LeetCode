@@ -3230,3 +3230,37 @@
 >
 > 卡塔兰数 $C_n$
 
+## [剑指 Offer 38. 字符串的排列](https://github.com/artintel/LeetCode/blob/master/96.%20%E4%B8%8D%E5%90%8C%E7%9A%84%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
+
+> 你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。
+>
+> ```
+> 输入：s = "abc"
+> 输出：["abc","acb","bac","bca","cab","cba"]
+> ```
+
+> 回溯：
+>
+> 先上模板
+>
+> ```cpp
+> void trace(...){
+> 	if 边界条件为真
+> 		ans.emplace_back(temp) // temp 用于保存完成的排列
+>     else{
+>         当前字符已经被使用过 continue
+>         flag[i] = 1;
+>         temp.push_back(s[i]);
+>         进入 trace ;
+>         temp.pop_back(); // 不使用该字符，推出
+>         flag[i] = 0; //不选择该数字 置为未使用的状态
+>     }
+> }
+> ```
+>
+> 考虑到特殊条件  --  aab 用重复字符
+>
+> 先排列降低编程难度  `sort(...)`
+>
+> 增加 `continue` 的判断条件 `if(flag[i] == 1 || (i != 0 && s[i] == s[i - 1] && flag[i - 1] != 1)) continue;`
+
