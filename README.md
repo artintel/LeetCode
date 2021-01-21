@@ -3264,3 +3264,106 @@
 >
 > 增加 `continue` 的判断条件 `if(flag[i] == 1 || (i != 0 && s[i] == s[i - 1] && flag[i - 1] != 1)) continue;`
 
+## [98. 验证二叉搜索树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2038.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/source_code.cpp)
+
+> 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
+>
+> 假设一个二叉搜索树具有如下特征：
+>
+> 节点的左子树只包含小于当前节点的数。
+> 节点的右子树只包含大于当前节点的数。
+> 所有左子树和右子树自身必须也是二叉搜索树。
+>
+> ```
+> 输入:
+>     5
+>    / \
+>   1   4
+>      / \
+>     3   6
+> 输出: false
+> 解释: 输入为: [5,1,4,null,null,3,6]。
+>      根节点的值为 5 ，但是其右子节点值为 4 。
+> ```
+
+> 二叉树的中序遍历就可，维护一个 `max` 作为当前结点之前最大结点的数(同时也保证这中序的遍历过程，从小到达), 中序遍历过程中，如果 `root->val > max` ，搜索树特征保留，更新 `max`， 否则 `return false`
+
+## [面试题 08.12. 八皇后](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2038.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/source_code.cpp)
+
+> 设计一种算法，打印 N 皇后在 N × N 棋盘上的各种摆法，其中每个皇后都不同行、不同列，也不在对角线上。这里的“对角线”指的是所有的对角线，不只是平分整个棋盘的那两条对角线。
+>
+> 注意：本题相对原题做了扩展
+>
+> ```
+> 输入：4
+>  输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+>  解释: 4 皇后问题存在如下两个不同的解法。
+> [
+>  [".Q..",  // 解法 1
+>   "...Q",
+>   "Q...",
+>   "..Q."],
+> 
+>  ["..Q.",  // 解法 2
+>   "Q...",
+>   "...Q",
+>   ".Q.."]
+> ]
+> ```
+
+> 该题相对于普通的八皇后题来说，增加的难度在于，所有的对角线都要考虑。现在先说明普通的八皇后问题解法：
+>
+> 回溯,组合:
+>
+> 维护一个大小为 `n` 的数组，代表 `n` 行，循环 `0 ~ n - 1`, 每一个数字代表第几列，那么八皇后问题就可以简化为 数字序列 [0, n - 1] 的排列组合问题，通过回溯可以很简单地求出。
+>
+> ```cpp
+> if (temp.size() == n) {
+>     ans.emplace_back(temp);
+>     return;
+> }
+> for (int i = 0; i < n; i++) {
+>     if (flag[i] == 1) continue;
+>     flag[i] = 1;
+>     temp.emplace_back(i);
+>     trace_back(ans, temp, flag, n);
+>     temp.pop_back();
+>     flag[i] = 0;
+> }
+> ```
+>
+> 那么本题难度便在于所有的对角线，其实可以通过查看得知，如果当前准备插入的位置和 `temp` 中里任何一个已插入位置满足以下条件，便处于对角线位置需要过滤掉：
+>
+> ```cpp
+> for( j = 0; j < temp.size(); j++){
+> 	if(max(temp[j], i) - min(temp[j], i) - (temp.size() - j) == 0) break;
+> }
+> ```
+>
+> 所以应改为：
+>
+> ```cpp
+> void trace_back(vector<vector<int>>& ans, vector<int>& temp, vector<int>& flag, const int& n) {
+>     if (temp.size() == n) {
+>         ans.emplace_back(temp);
+>         return;
+>     }
+>     for (int i = 0; i < n; i++) {
+>         int j = 0;
+>         for( j = 0; j < temp.size(); j++){
+>             if(max(temp[j], i) - min(temp[j], i) - (temp.size() - j) == 0) break;
+>         }
+>         if( j != temp.size() ) continue;
+>         if (flag[i] == 1) continue;
+>         flag[i] = 1;
+>         temp.emplace_back(i);
+>         trace_back(ans, temp, flag, n);
+>         temp.pop_back();
+>         flag[i] = 0;
+>     }
+>     return;
+> }
+> ```
+>
+> 
+
