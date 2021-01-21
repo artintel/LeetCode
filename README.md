@@ -3264,7 +3264,7 @@
 >
 > 增加 `continue` 的判断条件 `if(flag[i] == 1 || (i != 0 && s[i] == s[i - 1] && flag[i - 1] != 1)) continue;`
 
-## [98. 验证二叉搜索树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2038.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/source_code.cpp)
+## [98. 验证二叉搜索树](https://github.com/artintel/LeetCode/blob/master/98.%20%E9%AA%8C%E8%AF%81%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/source_code.cpp)
 
 > 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
 >
@@ -3288,7 +3288,7 @@
 
 > 二叉树的中序遍历就可，维护一个 `max` 作为当前结点之前最大结点的数(同时也保证这中序的遍历过程，从小到达), 中序遍历过程中，如果 `root->val > max` ，搜索树特征保留，更新 `max`， 否则 `return false`
 
-## [面试题 08.12. 八皇后](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2038.%20%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97/source_code.cpp)
+## [面试题 08.12. 八皇后](https://github.com/artintel/LeetCode/blob/master/%E9%9D%A2%E8%AF%95%E9%A2%98%2008.12.%20%E5%85%AB%E7%9A%87%E5%90%8E/source_code.cpp)
 
 > 设计一种算法，打印 N 皇后在 N × N 棋盘上的各种摆法，其中每个皇后都不同行、不同列，也不在对角线上。这里的“对角线”指的是所有的对角线，不只是平分整个棋盘的那两条对角线。
 >
