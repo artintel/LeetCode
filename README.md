@@ -3439,7 +3439,7 @@
 > ```
 >
 
-## [剑指  Offer 39. 数组中出现次数超过一半的数字](https://github.com/artintel/LeetCode/blob/master/155.%20%E6%9C%80%E5%B0%8F%E6%A0%88/source_code.cpp)
+## [剑指  Offer 39. 数组中出现次数超过一半的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2039.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
 >
