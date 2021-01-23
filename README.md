@@ -3390,3 +3390,53 @@
 > 层次遍历，要保存为二维数组，用 `count` 记录当前层需要输入的结点个数，`next_count` 记录下一层的个数
 >
 
+## [155. 最小栈](https://github.com/artintel/LeetCode/blob/master/102.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/source_code.cpp)
+
+> 设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。
+>
+> push(x) —— 将元素 x 推入栈中。
+> pop() —— 删除栈顶的元素。
+> top() —— 获取栈顶元素。
+> getMin() —— 检索栈中的最小元素。
+>
+> ```
+> 输入：
+> ["MinStack","push","push","push","getMin","pop","top","getMin"]
+> [[],[-2],[0],[-3],[],[],[],[]]
+> 
+> 输出：
+> [null,null,null,null,-3,null,0,-2]
+> 
+> 解释：
+> MinStack minStack = new MinStack();
+> minStack.push(-2);
+> minStack.push(0);
+> minStack.push(-3);
+> minStack.getMin();   --> 返回 -3.
+> minStack.pop();
+> minStack.top();      --> 返回 0.
+> minStack.getMin();   --> 返回 -2.
+> ```
+
+> `vector<int> or  stack<int>` 皆可，维护两个，另一个用于保存当前最小。
+>
+> ```cpp
+> void push(int x) {
+>     ans.push_back(x);
+>     if(Min.empty()){
+>         Min.push_back(x);
+>     }
+>     else{
+>         if(Min[_size - 1] <= x){
+>             Min.push_back(Min[_size - 1]);
+>         }
+>         else{
+>             Min.push_back(x);
+>         }
+>     }
+>     _size++;
+> }
+> ```
+>
+> 
+
