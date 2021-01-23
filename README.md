@@ -3390,7 +3390,7 @@
 > 层次遍历，要保存为二维数组，用 `count` 记录当前层需要输入的结点个数，`next_count` 记录下一层的个数
 >
 
-## [155. 最小栈](https://github.com/artintel/LeetCode/blob/master/102.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%B1%82%E5%BA%8F%E9%81%8D%E5%8E%86/source_code.cpp)
+## [155. 最小栈](https://github.com/artintel/LeetCode/blob/master/155.%20%E6%9C%80%E5%B0%8F%E6%A0%88/source_code.cpp)
 
 > 设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。
 >
