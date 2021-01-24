@@ -3456,7 +3456,7 @@
 >
 > (之前用二分法的时候，当数组有序的时候，出现超时)
 
-## [226. 翻转链表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2039.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%AC%A1%E6%95%B0%E8%B6%85%E8%BF%87%E4%B8%80%E5%8D%8A%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
+## [226. 翻转链表](https://github.com/artintel/LeetCode/blob/master/226.%20%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
 
 > 翻转一颗二叉树
 >
