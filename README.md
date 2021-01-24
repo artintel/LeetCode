@@ -3481,7 +3481,7 @@
 > 简单的递归即可
 >
 
-## [剑指 Offer 40. 最小的k个数](https://github.com/artintel/LeetCode/blob/master/226.%20%E7%BF%BB%E8%BD%AC%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
+## [剑指 Offer 40. 最小的k个数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2040.%20%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/source_code.cpp)
 
 > 输入整数数组 `arr` ，找出其中最小的 `k` 个数。例如，输入4、5、1、6、2、7、3、8这8个数字，则最小的4个数字是1、2、3、4。
 >
@@ -3492,9 +3492,11 @@
 
 > 利用快排思想，当定位到 k - 1 的位置时，便完成了分块。
 >
-> 大顶堆：
+> 大顶堆：`priority_queue<int>`
 >
 > 如果题目要求不能改变数组本身，通过维护一个大顶堆的数据结构，并设定容量为 k,通过更新，插入删除操作便可得到。
+>
+> 红黑树：`set, multiset`
 >
 > 大顶堆在处理海量数据的时候有很好的效果，也包括如红黑树这种数据结构。
 
