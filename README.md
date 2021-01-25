@@ -3500,7 +3500,7 @@
 >
 > 大顶堆在处理海量数据的时候有很好的效果，也包括如红黑树这种数据结构。
 
-## [543. 二叉树的直径](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2040.%20%E6%9C%80%E5%B0%8F%E7%9A%84k%E4%B8%AA%E6%95%B0/source_code.cpp)
+## [543. 二叉树的直径](https://github.com/artintel/LeetCode/blob/master/543.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E7%9B%B4%E5%BE%84/source_code.cpp)
 
 > 给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过也可能不穿过根结点。
 >
