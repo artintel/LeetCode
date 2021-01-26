@@ -3562,7 +3562,7 @@
 >
 > 实现上可以通过 C++ STL 中的函数 `push_heap、pop_heap`以及 `vector` 实现堆。比较仿函数 `less` 和 `greater` 分别用来实现最大堆和最小堆
 
-## [461. 汉明距离](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2041.%20%E6%95%B0%E6%8D%AE%E6%B5%81%E4%B8%AD%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0/source_code.cpp)
+## [461. 汉明距离](https://github.com/artintel/LeetCode/blob/master/461.%20%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/source_code.cpp)
 
 > 两个整数之间的汉明距离指的是这两个数字对应二进制位不同的位置的数目。
 >
