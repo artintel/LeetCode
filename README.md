@@ -3588,7 +3588,7 @@
 >
 > 可知 n 的二进制位中， x 与 y 相同的位都为 0， 不同的位都为 1， 通过计算有多少个 1 ，便得到勒汉明距离
 
-## [剑指 Offer 42. 连续子数组的最大和](https://github.com/artintel/LeetCode/blob/master/461.%20%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB/source_code.cpp)
+## [剑指 Offer 42. 连续子数组的最大和](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/source_code.cpp)
 
 > 输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
 >
