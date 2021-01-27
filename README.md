@@ -3612,3 +3612,19 @@
 >
 > 否则：`dp[i] = dp[i - 1] + nums[i]`
 
+## [105. 从前序与中序遍历序列构造二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/source_code.cpp)
+
+> ```
+> 前序遍历 preorder = [3,9,20,15,7]
+> 中序遍历 inorder = [9,3,15,20,7]
+> 
+>     3
+>    / \
+>   9  20
+>     /  \
+>    15   7
+> ```
+
+> 递归
+>
+
