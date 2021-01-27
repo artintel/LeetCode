@@ -3628,3 +3628,23 @@
 > 递归
 >
 
+## [剑指 Offer 41. 1~n 整数中 1 出现的次数](https://github.com/artintel/LeetCode/blob/master/105.%20%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
+
+> 输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。
+>
+> 例如，输入12，1～12这些整数中包含1 的数字有1、10、11和12，1一共出现了5次。
+>
+
+> ```
+> 输入：n = 12
+> 输出：5
+> 
+> 输入：n = 13
+> 输出：6
+> ```
+
+> 作者：jyd
+> 链接：https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/solution/mian-shi-ti-43-1n-zheng-shu-zhong-1-chu-xian-de-2/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
