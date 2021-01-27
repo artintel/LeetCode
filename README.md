@@ -3612,7 +3612,7 @@
 >
 > 否则：`dp[i] = dp[i - 1] + nums[i]`
 
-## [105. 从前序与中序遍历序列构造二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2042.%20%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%A4%A7%E5%92%8C/source_code.cpp)
+## [105. 从前序与中序遍历序列构造二叉树](https://github.com/artintel/LeetCode/blob/master/105.%20%E4%BB%8E%E5%89%8D%E5%BA%8F%E4%B8%8E%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
 
 > ```
 > 前序遍历 preorder = [3,9,20,15,7]
