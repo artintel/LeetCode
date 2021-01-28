@@ -3648,3 +3648,15 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+## [114. 二叉树展开为链表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2043.%201~n%E6%95%B4%E6%95%B0%E4%B8%AD1%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/source_code.cpp)
+
+> 给你二叉树的根结点 root ，请你将它展开为一个单链表：
+>
+> 展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。
+> 展开后的单链表应该与二叉树 先序遍历 顺序相同。
+
+> ```
+> 输入：root = [1,2,5,3,4,null,6]
+> 输出：[1,null,2,null,3,null,4,null,5,null,6]
+> ```
+
