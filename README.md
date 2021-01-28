@@ -3670,3 +3670,35 @@
 > 链接：https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/solution/er-cha-shu-zhan-kai-wei-lian-biao-by-leetcode-solu/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [剑指 Offer 45. 把数组排成最小的数](https://github.com/artintel/LeetCode/blob/master/114.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E5%B1%95%E5%BC%80%E4%B8%BA%E9%93%BE%E8%A1%A8/source_code.cpp)
+
+> 输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
+
+> ```
+> 输入: [10,2]
+> 输出: "102"
+> 
+> 输入: [3,30,34,5,9]
+> 输出: "3033459"
+> ```
+
+> 其实是一个排序算法，先把 `vector<int>` 内的数据转换成  `vector<string>` 。
+>
+> 根据判断规则：设 `nums` 任意两数字的字符串格式 `x` 和 `y`，则有：
+>
+> - 若凭借字符串 x + y > y + x, 则 m > n;
+> - 反之，若 x + y < y + x, 则 n < m;
+>
+> 据此构造二元谓词
+>
+> ```c++
+> class cmp{
+>     bool operator() (const string& a, const& string b){
+> 		return a + b < b + a;// 如果是  <= 后面数字变长后会报错，不知道为什么
+>     }
+> }
+> ```
+>
+> 
+
