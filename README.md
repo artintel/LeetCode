@@ -3671,7 +3671,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [剑指 Offer 45. 把数组排成最小的数](https://github.com/artintel/LeetCode/blob/master/114.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E5%B1%95%E5%BC%80%E4%B8%BA%E9%93%BE%E8%A1%A8/source_code.cpp)
+## [剑指 Offer 45. 把数组排成最小的数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2045.%20%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E5%88%97%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/source_code.cpp)
 
 > 输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
 
@@ -3699,6 +3699,4 @@
 >     }
 > }
 > ```
->
-> 
 
