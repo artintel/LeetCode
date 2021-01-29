@@ -1,7 +1,7 @@
 /*
  * @Author: Mayc
  * @Date: 2021-01-28 13:17:09
- * @LastEditTime: 2021-01-28 13:17:51
+ * @LastEditTime: 2021-01-28 13:33:41
  * @FilePath: \undefinedd:\VSC++&GO\LeetCode\剑指 Offer 45. 把数组排列成最小的数\source_code.cpp
  * @这是一个漂亮的注释头
  */
@@ -10,7 +10,7 @@ class cmp
 public:
     bool operator() (const string &a, const string &b)
     {
-        return a + b < b + a; // <= 报错 ？ 为什么
+        return a + b < b + a; // <= 报错 ？ 为什么 -->  因为定义:相等的两个值必须返回 false;
     }
 };
 class Solution {

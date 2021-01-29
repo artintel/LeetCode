@@ -3700,3 +3700,26 @@
 > }
 > ```
 
+## [215. 数组中的第 K 个最大元素](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2045.%20%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E5%88%97%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/source_code.cpp)
+
+> 在未排序的数组中找到第 **k** 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
+
+> ```
+> 输入: [3,2,1,5,6,4] 和 k = 2
+> 输出: 5
+> ```
+
+> 思路:快排找 positition
+>
+> 条件：
+>
+> ```c++
+> if( left + k == n ) 找到
+> else if( left + k < n ){
+> 	partition( nums, left + 1, end, k, n );
+> }
+> else {
+> 	partition( nums, start, left - 1, k, n )
+> }
+> ```
+
