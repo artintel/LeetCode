@@ -3723,7 +3723,7 @@
 > }
 > ```
 
-## [236. 二叉树的最近公共祖先](https://github.com/artintel/LeetCode/blob/master/215.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E7%AC%AC%20K%20%E4%B8%AA%E6%9C%80%E5%A4%A7%E5%85%83%E7%B4%A0/source_code.cpp)
+## [236. 二叉树的最近公共祖先](https://github.com/artintel/LeetCode/blob/master/236.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%9C%80%E8%BF%91%E5%85%AC%E5%85%B1%E7%A5%96%E5%85%88/source_code.cpp)
 
 > 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。
 >
