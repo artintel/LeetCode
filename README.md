@@ -3771,7 +3771,7 @@
 > 需要注意的是，从左往右边更新边计算的时候已经保证了 mp[pre[i]−k] 里记录的 pre[j] 的下标范围是 0 ≤ j ≤ i 。同时，由于 pre[i] 的计算只与前一项的答案有关，因此我们可以不用建立 pre 数组，直接用 pre 变量来记录 pre[i−1] 的答案即可。
 >
 
-## [剑指 Offer 46. 把数字翻译成字符串](https://github.com/artintel/LeetCode/blob/master/560.%20%E5%92%8C%E4%B8%BA%20K%20%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
+## [剑指 Offer 46. 把数字翻译成字符串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2046.%20%E6%8A%8A%E6%95%B0%E5%AD%97%E7%BF%BB%E8%AF%91%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2/source_code.cpp)
 
 > 给定一个数字，我们按照如下规则把它翻译为字符串：0 翻译成 “a” ，1 翻译成 “b”，……，11 翻译成 “l”，……，25 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
 >
