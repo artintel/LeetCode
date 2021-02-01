@@ -3833,7 +3833,7 @@
 > ans = max( mx, ans );
 > ```
 
-## [剑指 Offer 47. 礼物的最大值](https://github.com/artintel/LeetCode/blob/master/152.%20%E4%B9%98%E7%A7%AF%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
+## [剑指 Offer 47. 礼物的最大值](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2047.%20%E7%A4%BC%E7%89%A9%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/source_code.cpp)
 
 > 在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
 >
@@ -3855,7 +3855,7 @@
 > dp[i][j] = max(dp[i][j - 1] + grid[i - 1][j - 1], dp[i - 1][j] + grid[i - 1][j - 1]);
 > ```
 
-## [剑指 Offer 48. 最长不含重复字符的子字符串](https://github.com/artintel/LeetCode/blob/master/152.%20%E4%B9%98%E7%A7%AF%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
+## [剑指 Offer 48. 最长不含重复字符的子字符串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/source_code.cpp)
 
 > 请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。
 
