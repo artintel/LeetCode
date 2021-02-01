@@ -3792,7 +3792,7 @@
 >
 > 但如果用递归来分析，回存在重复的子问题，所以采用动态规划，维护一个数组。 `dp[n]`，并且上诉的 f(i) 的公式便是状态转移方程。
 
-## [152. 乘积最大子数组](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2046.%20%E6%8A%8A%E6%95%B0%E5%AD%97%E7%BF%BB%E8%AF%91%E6%88%90%E5%AD%97%E7%AC%A6%E4%B8%B2/source_code.cpp)
+## [152. 乘积最大子数组](https://github.com/artintel/LeetCode/blob/master/152.%20%E4%B9%98%E7%A7%AF%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
 
 > 给你一个整数数组 `nums` ，请你找出数组中乘积最大的连续子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
 
