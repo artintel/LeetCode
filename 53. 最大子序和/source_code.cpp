@@ -1,3 +1,16 @@
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int max_ans = nums[0];
+        int pre = nums[0];
+        for(int i = 1; i < nums.size(); i++){
+            pre = max( pre + nums[i], nums[i] );
+            max_ans = max( pre, max_ans );
+        }
+        return max_ans;
+    }
+};
+
 # 动态规划
 class Solution {
 public:
