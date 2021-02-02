@@ -3909,3 +3909,38 @@
 >
 > `outpu[i] = output[i] * temp` , `temp` 用来保存从右到左的乘积
 
+## [剑指 Offer 49. 丑数](https://github.com/artintel/LeetCode/blob/master/238.%20%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF/source_code.cpp)
+
+> 我们把只包含质因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。
+
+> ```
+> 输入: n = 10
+> 输出: 12
+> 解释: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 是前 10 个丑数。
+> ```
+
+> 根据丑数的定义，丑数应该是另一个丑数乘以 2、3 或者 5 的结果(1 除外 )。因此，我们可以创建一个数组，里面的数字是排好序的丑数，每个丑数都是前面的丑数乘以 2、3 或者 5 的结果。
+>
+> 首先考虑把已有的每个丑数乘以 2。在乘 2 的时候，能得到若干个 小于或者等于最后一个丑数 M 的结果。由于按照顺序生成，小于或者等于 M 的结果肯定在数组中了，不需要在此次考虑；还会得到若干个大于 M 的结果，但只需要第一个大于 M 的结果。把第一个乘以 2 后大于 M 的结果即为 M2。同样，把每个丑数乘以 3 和 5，分别得到 M3, M5。那么下一个丑数便是这三个数中的最小者。
+>
+> ```cpp
+> vector<int> result(n, 1);
+> vector<int>::iterator r_two = result.begin();
+> vector<int>::iterator r_three = result.begin();
+> vector<int>::iterator r_five = result.begin();
+> int count = 1;
+> while( count < n ){
+>     int min = MIN( (*r_two) * 2, (*r_three) * 3, (*r_five) * 5 );
+>     result[count++] = min;
+>     while( (*r_two) * 2 <= min ){
+>         r_two++;
+>     }
+>     while( (*r_three) * 3 <= min ){
+>         r_three++;
+>     }
+>     while( (*r_five) * 5 <= min ){
+>         r_five++;
+>     }
+> }
+> ```
+
