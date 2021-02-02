@@ -3909,7 +3909,7 @@
 >
 > `outpu[i] = output[i] * temp` , `temp` 用来保存从右到左的乘积
 
-## [剑指 Offer 49. 丑数](https://github.com/artintel/LeetCode/blob/master/238.%20%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF/source_code.cpp)
+## [剑指 Offer 49. 丑数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2049.%20%E4%B8%91%E6%95%B0/source_code.cpp)
 
 > 我们把只包含质因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。
 
