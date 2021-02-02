@@ -3882,7 +3882,7 @@
 >
 > 否则，i 位置的字符和 dp[i - 1] 长度内的某一个字符相等，其距离 i - j 便是 dp[i] 的值； 
 
-## [238. 除自身以外数组的乘积](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2048.%20%E6%9C%80%E9%95%BF%E4%B8%8D%E5%90%AB%E9%87%8D%E5%A4%8D%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/source_code.cpp)
+## [238. 除自身以外数组的乘积](https://github.com/artintel/LeetCode/blob/master/238.%20%E9%99%A4%E8%87%AA%E8%BA%AB%E4%BB%A5%E5%A4%96%E6%95%B0%E7%BB%84%E7%9A%84%E4%B9%98%E7%A7%AF/source_code.cpp)
 
 > 给你一个长度为 n 的整数数组 nums，其中 n > 1，返回输出数组 output ，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。
 >
