@@ -3974,3 +3974,17 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+## [剑指 Offer 50. 第一个只出现一次的字符](https://github.com/artintel/LeetCode/blob/master/139.%20%E5%8D%95%E8%AF%8D%E6%8B%86%E5%88%86/source_code.cpp)
+
+> 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。 s 只包含小写字母。
+
+> ```
+> s = "abaccdeff"
+> 返回 "b"
+> 
+> s = "" 
+> 返回 " "
+> ```
+
+> 哈希表即可。自己维护一个 `vector` 或者使用 `unordered_map` 皆可。
+
