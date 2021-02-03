@@ -3974,7 +3974,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [剑指 Offer 50. 第一个只出现一次的字符](https://github.com/artintel/LeetCode/blob/master/139.%20%E5%8D%95%E8%AF%8D%E6%8B%86%E5%88%86/source_code.cpp)
+## [剑指 Offer 50. 第一个只出现一次的字符](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2050.%20%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6/source_code.cpp)
 
 > 在字符串 s 中找出第一个只出现一次的字符。如果没有，返回一个单空格。 s 只包含小写字母。
 
