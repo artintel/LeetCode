@@ -4009,7 +4009,7 @@
 
 > 深度搜索 dfs
 
-## [剑指 Offer 51. 数组中的逆序对](https://github.com/artintel/LeetCode/blob/master/200.%20%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/source_code.cpp)
+## [剑指 Offer 51. 数组中的逆序对](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2051.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%80%86%E5%BA%8F%E5%AF%B9/source_code.cpp)
 
 > 在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数。
 
