@@ -4034,3 +4034,7 @@
 >
 > --> [4, 5, 6, 7]
 
+## [剑指 Offer 52. 两个链表的第一个公共节点](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2051.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%80%86%E5%BA%8F%E5%AF%B9/source_code.cpp)
+
+> 输入两个链表，找出它们的第一个公共节点
+
