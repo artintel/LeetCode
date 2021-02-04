@@ -3988,7 +3988,7 @@
 
 > 哈希表即可。自己维护一个 `vector` 或者使用 `unordered_map` 皆可。
 
-## [200. 岛屿数量](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2050.%20%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E5%AD%97%E7%AC%A6/source_code.cpp)
+## [200. 岛屿数量](https://github.com/artintel/LeetCode/blob/master/200.%20%E5%B2%9B%E5%B1%BF%E6%95%B0%E9%87%8F/source_code.cpp)
 
 > 给你一个由 '1'（陆地）和 '0'（水）组成的的二维网格，请你计算网格中岛屿的数量。
 >
