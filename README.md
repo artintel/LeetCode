@@ -4082,7 +4082,7 @@
 >
 > 思路：二分查找到最大的小于 `target` 的数的位置
 
-## [剑指 Offer 53 - II. 0 ~n - 1 中缺失的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2053%20-%20I.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97/source_code.cpp)
+## [剑指 Offer 53 - II. 0 ~n - 1 中缺失的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2053%20-%20II.%200%20~%20n%20-%201%20%E4%B8%AD%E7%BC%BA%E5%A4%B1%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内。在范围0～n-1内的n个数字中有且只有一个数字不在该数组中，请找出这个数字。
 >
