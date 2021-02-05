@@ -4071,3 +4071,14 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+## [剑指 Offer 53 - I. 在排序数组中查找数字](https://github.com/artintel/LeetCode/blob/master/739.%20%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6/source_code.cpp)
+
+> 统计一个数字在排序数组中出现的次数。
+>
+> ```
+> 输入: nums = [5,7,7,8,8,10], target = 8
+> 输出: 2
+> ```
+>
+> 思路：二分查找到最大的小于 `target` 的数的位置
+
