@@ -4071,7 +4071,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [剑指 Offer 53 - I. 在排序数组中查找数字](https://github.com/artintel/LeetCode/blob/master/739.%20%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6/source_code.cpp)
+## [剑指 Offer 53 - I. 在排序数组中查找数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2053%20-%20I.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 统计一个数字在排序数组中出现的次数。
 >
@@ -4081,4 +4081,30 @@
 > ```
 >
 > 思路：二分查找到最大的小于 `target` 的数的位置
+
+## [剑指 Offer 53 - II. 0 ~n - 1 中缺失的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2053%20-%20I.%20%E5%9C%A8%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E6%9F%A5%E6%89%BE%E6%95%B0%E5%AD%97/source_code.cpp)
+
+> 一个长度为n-1的递增排序数组中的所有数字都是唯一的，并且每个数字都在范围0～n-1之内。在范围0～n-1内的n个数字中有且只有一个数字不在该数组中，请找出这个数字。
+>
+> ```
+> 输入: [0,1,3]
+> 输出: 2
+> ```
+>
+> 思路：二分查找：
+>
+> 如果当前位置的值 == 当前位置，说明从 0 到当前位置的数组存在是合理的没有确实， left = mid + 1;
+>
+> 否则，如果 nums[mid] > mid, 出现断层， right = mid - 1;
+>
+> ```cpp
+> if( nums[mid] == mid ){
+> 	left = mid + 1;
+> }
+> else if( nums[mid] > mid ){
+> 	right = mid - 1;
+> }
+> ```
+>
+> 
 
