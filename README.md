@@ -4038,7 +4038,7 @@
 
 > 输入两个链表，找出它们的第一个公共节点
 
-## [739. 每日温度](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2052.%20%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E8%8A%82%E7%82%B9/source_code.cpp)
+## [739. 每日温度](https://github.com/artintel/LeetCode/blob/master/739.%20%E6%AF%8F%E6%97%A5%E6%B8%A9%E5%BA%A6/source_code.cpp)
 
 > 请根据每日 气温 列表，重新生成一个列表。对应位置的输出为：要想观测到更高的气温，至少需要等待的天数。如果气温在这之后都不会升高，请在该位置用 0 来代替。
 >
