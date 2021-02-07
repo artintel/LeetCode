@@ -4130,20 +4130,4 @@
 > max_edge = max(max_edge, dp[i][j]);
 > ```
 >
-
-## [剑指 Offer 54. 二叉搜索树的第 K 大节点](https://github.com/artintel/LeetCode/blob/master/221.%20%E6%9C%80%E5%A4%A7%E6%AD%A3%E6%96%B9%E5%BD%A2/source_code.cpp)
-
-> 给定一颗二叉搜索树，请找出其中第 K 大的节点
->
-> ```
-> 输入: root = [3,1,4,null,2], k = 1
->    3
->   / \
->  1   4
->   \
->    2
-> 输出: 4
-> ```
->
-> 思路：中序遍历，通过一个 vector 数组来寻找第 K 大的节点。初始化 count = 1, 当 count == k 时，初始化 Index = 0; count++, 当 count > k 时，indedx++, 否则 count++;
->
+> 
