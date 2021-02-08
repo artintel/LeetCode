@@ -4223,7 +4223,7 @@
 >  */
 > ```
 
-## [剑指 Offer 55 - I. 二叉树的深度](https://github.com/artintel/LeetCode/blob/master/208.%20%E5%AE%9E%E7%8E%B0%20Trie%20(%E5%89%8D%E7%BC%80%E6%A0%91)/source_code.cpp)
+## [剑指 Offer 55 - I. 二叉树的深度](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2055%20-%20I.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/source_code.cpp)
 
 > 输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。
 >
@@ -4246,6 +4246,22 @@
 > int nright = 1 + func(root->right);
 > return nleft > nright ? nleft : nright
 > ```
+
+## [剑指 Offer 55 - II. 平衡二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2055%20-%20I.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/source_code.cpp)
+
+> 输入一棵二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过1，那么它就是一棵平衡二叉树。
 >
-> 
+> ```
+> 给定二叉树 [3,9,20,null,null,15,7]
+>     3
+>    / \
+>   9  20
+>     /  \
+>    15   7
+> 返回 true 
+> ```
+>
+> 思路：后序遍历，只需要遍历一遍
+>
+> 在遍历到一个节点之前我们已经便利了它的左、右子树。只要在遍历每个节点的时候记录他的深度(该节点到叶子节点路径的长度。)
 
