@@ -4247,7 +4247,7 @@
 > return nleft > nright ? nleft : nright
 > ```
 
-## [剑指 Offer 55 - II. 平衡二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2055%20-%20I.%20%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/source_code.cpp)
+## [剑指 Offer 55 - II. 平衡二叉树](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2055%20-%20II.%20%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
 
 > 输入一棵二叉树的根节点，判断该树是不是平衡二叉树。如果某二叉树中任意节点的左右子树的深度相差不超过1，那么它就是一棵平衡二叉树。
 >
