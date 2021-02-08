@@ -4147,3 +4147,105 @@
 >
 > 思路：中序遍历，通过一个 vector 数组来寻找第 K 大的节点。初始化 count = 1, 当 count == k 时，初始化 Index = 0; count++, 当 count > k 时，indedx++, 否则 count++;
 >
+
+## [208. 实现 Trie ( 前缀树)](https://github.com/artintel/LeetCode/blob/master/208.%20%E5%AE%9E%E7%8E%B0%20Trie%20(%E5%89%8D%E7%BC%80%E6%A0%91)/source_code.cpp)
+
+> 实现一个 Trie (前缀树)，包含 `insert`, `search`, 和 `startsWith` 这三个操作。
+>
+> ```
+> Trie trie = new Trie();
+> 
+> trie.insert("apple");
+> trie.search("apple");   // 返回 true
+> trie.search("app");     // 返回 false
+> trie.startsWith("app"); // 返回 true
+> trie.insert("app");   
+> trie.search("app");     // 返回 true
+> ```
+>
+> 思路：模板
+>
+> ```cpp
+> class Trie {
+> private:
+>     bool flag;
+>     Trie* next[26] = { nullptr };
+> public:
+>     /** Initialize your data structure here. */
+>     Trie() {
+>         flag = false;
+>     }
+>     
+>     /** Inserts a word into the trie. */
+>     void insert(string word) {
+>         Trie* root = this;
+>         for(const auto& elem : word){
+>             if( root->next[elem - 'a'] == nullptr ){
+>                 root->next[elem - 'a'] = new Trie();
+>             }
+>             root = root->next[elem - 'a'];
+>         }
+>         root->flag = true;
+>     }
+>     
+>     /** Returns if the word is in the trie. */
+>     bool search(string word) {
+>         Trie* root = this;
+>         for(auto elem : word){
+>             if( root->next[elem - 'a'] == nullptr ){
+>                 return false;
+>             }
+>             root = root->next[elem - 'a'];
+>         }
+>         if( root->flag == true ) return true;
+>         return false;
+>     }
+>     
+>     /** Returns if there is any word in the trie that starts with the given prefix. */
+>     bool startsWith(string prefix) {
+>         Trie* root = this;
+>         for(auto elem : prefix){
+>             if( root->next[elem - 'a'] == nullptr ){
+>                 return false;
+>             }
+>             root = root->next[elem - 'a'];
+>         }
+>         return true;
+>     }
+> };
+> 
+> /**
+>  * Your Trie object will be instantiated and called as such:
+>  * Trie* obj = new Trie();
+>  * obj->insert(word);
+>  * bool param_2 = obj->search(word);
+>  * bool param_3 = obj->startsWith(prefix);
+>  */
+> ```
+
+## [剑指 Offer 55 - I. 二叉树的深度](https://github.com/artintel/LeetCode/blob/master/208.%20%E5%AE%9E%E7%8E%B0%20Trie%20(%E5%89%8D%E7%BC%80%E6%A0%91)/source_code.cpp)
+
+> 输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。
+>
+> ```
+> 给定二叉树 [3,9,20,null,null,15,7]，
+>     3
+>    / \
+>   9  20
+>     /  \
+>    15   7
+> ```
+>
+> 思路：dfs / 递归
+>
+> 递归：
+>
+> ```cpp
+> if( !root ) return 0;
+> int nleft = 1 + func(root->left);
+> int nright = 1 + func(root->right);
+> return nleft > nright ? nleft : nright
+> ```
+>
+> 
+
