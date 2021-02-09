@@ -4265,7 +4265,7 @@
 >
 > 在遍历到一个节点之前我们已经便利了它的左、右子树。只要在遍历每个节点的时候记录他的深度(该节点到叶子节点路径的长度。)
 
-## [207. 课程表](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2055%20-%20II.%20%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91/source_code.cpp)
+## [207. 课程表](https://github.com/artintel/LeetCode/blob/master/207.%20%E8%AF%BE%E7%A8%8B%E8%A1%A8/source_code.cpp)
 
 > 你这个学期必须选修 numCourses 门课程，记为 0 到 numCourses - 1 。
 >
