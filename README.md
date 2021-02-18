@@ -4338,7 +4338,7 @@
 >
 > 暴力：两个指针分别从 i == 0 和 j == n - 1 遍历；
 
-## [剑指 Offer 57 - II. 和为 s 的连续正数序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057%20-%20II.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97/source_code.cpp)
+## [剑指 Offer 57 - II. 和为 s 的连续正数序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057%20-%20I.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
 >
@@ -4351,7 +4351,7 @@
 >
 > 考虑两个数 small 和 big 分别表示序列的最小值和最大值。并分别初始化为 1 和 2。如果从 small 到 big 的序列和大于 s ，则从序列中去掉较小值，也就是增大 small 的值。否则增大 big，一直增加到 small 到 ( s + 1 ) / 2 为止。
 
-## [剑指 Offer 58 - I. 翻转单词顺序](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057%20-%20II.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97/source_code.cpp)
+## [剑指 Offer 58 - I. 翻转单词顺序](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2058%20-%20I.%20%E7%BF%BB%E8%BD%AC%E5%8D%95%E8%AF%8D%E9%A1%BA%E5%BA%8F/source_code.cpp)
 
 > 输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。
 >
@@ -4365,4 +4365,15 @@
 > ```
 >
 > 状态机
+
+## [剑指 Offer 58 - II. 左旋转字符串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2058%20-%20I.%20%E7%BF%BB%E8%BD%AC%E5%8D%95%E8%AF%8D%E9%A1%BA%E5%BA%8F/source_code.cpp)
+
+> 字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。请定义一个函数实现字符串左旋转操作的功能。比如，输入字符串"abcdefg"和数字2，该函数将返回左旋转两位得到的结果"cdefgab"。
+>
+> ```
+> 输入: s = "abcdefg", k = 2
+> 输出: "cdefgab"
+> ```
+>
+> 分别翻转以 k 为界的前后子串，再从后往前遍历输出字符串字符
 
