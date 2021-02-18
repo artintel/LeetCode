@@ -4297,7 +4297,7 @@
 >
 > 如果某一位的和能被 3 整除，那么那个只出现一次的数字二进制表示中对应的那一位为 0，否则为 1。
 
-## [287. 寻找重复数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2056%20-%20II.%20%E6%95%B0%E7%BB%84%E4%B8%AD%E6%95%B0%E5%AD%97%E5%87%BA%E7%8E%B0%E7%9A%84%E6%AC%A1%E6%95%B0/source_code.cpp)
+## [287. 寻找重复数](https://github.com/artintel/LeetCode/blob/master/287.%20%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E6%95%B0/source_code.cpp)
 
 > 给定一个包含 n + 1 个整数的数组 nums ，其数字都在 1 到 n 之间（包括 1 和 n），可知至少存在一个重复的整数。
 >
@@ -4324,5 +4324,16 @@
 > i++;
 > ```
 >
-> 
 
+## [剑指 Offer 57. 和为 s 的两个数字](https://github.com/artintel/LeetCode/blob/master/287.%20%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E6%95%B0/source_code.cpp)
+
+> 输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。
+>
+> ```
+> 输入：nums = [2,7,11,15], target = 9
+> 输出：[2,7] 或者 [7,2]
+> ```
+>
+> 应该也可以用二分法来优化。
+>
+> 暴力：两个指针分别从 i == 0 和 j == n - 1 遍历；
