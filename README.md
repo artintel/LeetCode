@@ -4325,7 +4325,7 @@
 > ```
 >
 
-## [剑指 Offer 57. 和为 s 的两个数字](https://github.com/artintel/LeetCode/blob/master/287.%20%E5%AF%BB%E6%89%BE%E9%87%8D%E5%A4%8D%E6%95%B0/source_code.cpp)
+## [剑指 Offer 57 - I. 和为 s 的两个数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。
 >
@@ -4337,3 +4337,15 @@
 > 应该也可以用二分法来优化。
 >
 > 暴力：两个指针分别从 i == 0 和 j == n - 1 遍历；
+
+## [剑指 Offer 57 - II. 和为 s 的连续正数序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/source_code.cpp)
+
+> 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
+>
+> 序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。
+>
+> ```
+> 输入：target = 9
+> 输出：[[2,3,4],[4,5]]
+> ```
+>
