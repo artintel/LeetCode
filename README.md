@@ -4338,7 +4338,7 @@
 >
 > 暴力：两个指针分别从 i == 0 和 j == n - 1 遍历；
 
-## [剑指 Offer 57 - II. 和为 s 的连续正数序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/source_code.cpp)
+## [剑指 Offer 57 - II. 和为 s 的连续正数序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057%20-%20II.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97/source_code.cpp)
 
 > 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数）。
 >
@@ -4349,3 +4349,20 @@
 > 输出：[[2,3,4],[4,5]]
 > ```
 >
+> 考虑两个数 small 和 big 分别表示序列的最小值和最大值。并分别初始化为 1 和 2。如果从 small 到 big 的序列和大于 s ，则从序列中去掉较小值，也就是增大 small 的值。否则增大 big，一直增加到 small 到 ( s + 1 ) / 2 为止。
+
+## [剑指 Offer 58 - I. 翻转单词顺序](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2057%20-%20II.%20%E5%92%8C%E4%B8%BA%20s%20%E7%9A%84%E8%BF%9E%E7%BB%AD%E6%AD%A3%E6%95%B0%E5%BA%8F%E5%88%97/source_code.cpp)
+
+> 输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。
+>
+> ```
+> 输入: "the sky is blue"
+> 输出: "blue is sky the"
+> 
+> 输入: "  hello world!  "
+> 输出: "world! hello"
+> 解释: 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
+> ```
+>
+> 状态机
+
