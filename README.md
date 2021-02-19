@@ -4399,7 +4399,7 @@
 >
 > minnum 和 left 同理
 
-## [剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/artintel/LeetCode/blob/master/581.%20%E6%9C%80%E7%9F%AD%E6%97%A0%E5%BA%8F%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
+## [剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2059%20-%20I.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/source_code.cpp)
 
 > 给定一个数组 `nums` 和滑动窗口的大小 `k`，请找出所有滑动窗口里的最大值。
 >
@@ -4422,4 +4422,43 @@
 > 链接：https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-i-hua-dong-chuang-kou-de-zui-da-1-6/
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+## [剑指 Offer 59 - II. 队列的最大值](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2059%20-%20I.%20%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/source_code.cpp)
+
+> 请定义一个队列并实现函数 max_value 得到队列里的最大值，要求函数max_value、push_back 和 pop_front 的均摊时间复杂度都是O(1)。
+>
+> 若队列为空，pop_front 和 max_value 需要返回 -1
+>
+> ```
+> 输入: 
+> ["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
+> [[],[1],[2],[],[],[]]
+> 输出: [null,null,null,2,1,2]
+> ```
+>
+> 需要维护三个类内成员
+>
+> ```cpp
+> private:
+> 	int _size;
+> 	deque<int> temp;//记录最大值
+> 	queue<int> Q;//保存队列数据
+> public:   
+>     void push_back(int value) {
+>         while( !temp.empty() && value > temp.back() ){
+>             temp.pop_back();
+>         }
+>         temp.push_back(value);
+>         Q.push(value);
+>         _size++;
+>     }
+>     int pop_front() {
+>         if( _size == 0 ) return -1;
+>         int num = Q.front();
+>         if( num == temp.front() ) temp.pop_front();
+>         Q.pop();
+>         _size--;
+>         return num;
+>     }
+> ```
 
