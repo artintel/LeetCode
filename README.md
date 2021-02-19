@@ -4366,7 +4366,7 @@
 >
 > 状态机
 
-## [剑指 Offer 58 - II. 左旋转字符串](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2058%20-%20I.%20%E7%BF%BB%E8%BD%AC%E5%8D%95%E8%AF%8D%E9%A1%BA%E5%BA%8F/source_code.cpp)
+## [剑指 Offer 58 - II. 左旋转字符串](https://github.com/artintel/LeetCode/tree/master/%E5%89%91%E6%8C%87%20Offer%2058%20-%20II.%20%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2)
 
 > 字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。请定义一个函数实现字符串左旋转操作的功能。比如，输入字符串"abcdefg"和数字2，该函数将返回左旋转两位得到的结果"cdefgab"。
 >
@@ -4376,4 +4376,26 @@
 > ```
 >
 > 分别翻转以 k 为界的前后子串，再从后往前遍历输出字符串字符
+
+## [581. 最短无序连续子数组](https://github.com/artintel/LeetCode/tree/master/%E5%89%91%E6%8C%87%20Offer%2058%20-%20II.%20%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2)
+
+> 给你一个整数数组 nums ，你需要找出一个 连续子数组 ，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
+>
+> 请你找出符合题意的 最短 子数组，并输出它的长度。
+>
+> ```
+> 输入：nums = [2,6,4,8,10,9,15]
+> 输出：5
+> 解释：你只需要对 [6, 4, 8, 10, 9] 进行升序排序，那么整个表都会变为升序排序。
+> ```
+>
+> 分别维护一个最大一个最小值 maxnum, minnum
+>
+> 再维护 right 和 left 为该子数组的左右端点
+>
+> maxnum 从左往右，当遇到逆序对，更新 right = i + 1 ( + 1 抵消整个数组有序的情况)
+>
+> 并更新 maxnum
+>
+> minnum 和 left 同理
 
