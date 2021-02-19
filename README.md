@@ -4377,7 +4377,7 @@
 >
 > 分别翻转以 k 为界的前后子串，再从后往前遍历输出字符串字符
 
-## [581. 最短无序连续子数组](https://github.com/artintel/LeetCode/tree/master/%E5%89%91%E6%8C%87%20Offer%2058%20-%20II.%20%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2)
+## [581. 最短无序连续子数组](https://github.com/artintel/LeetCode/blob/master/581.%20%E6%9C%80%E7%9F%AD%E6%97%A0%E5%BA%8F%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
 
 > 给你一个整数数组 nums ，你需要找出一个 连续子数组 ，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。
 >
@@ -4398,4 +4398,28 @@
 > 并更新 maxnum
 >
 > minnum 和 left 同理
+
+## [剑指 Offer 59 - I. 滑动窗口的最大值](https://github.com/artintel/LeetCode/blob/master/581.%20%E6%9C%80%E7%9F%AD%E6%97%A0%E5%BA%8F%E8%BF%9E%E7%BB%AD%E5%AD%90%E6%95%B0%E7%BB%84/source_code.cpp)
+
+> 给定一个数组 `nums` 和滑动窗口的大小 `k`，请找出所有滑动窗口里的最大值。
+>
+> ```
+> 输入: nums = [1,3,-1,-3,5,3,6,7], 和 k = 3
+> 输出: [3,3,5,5,6,7] 
+> 解释: 
+> 
+>   滑动窗口的位置                最大值
+> ---------------               -----
+> [1  3  -1] -3  5  3  6  7       3
+>  1 [3  -1  -3] 5  3  6  7       3
+>  1  3 [-1  -3  5] 3  6  7       5
+>  1  3  -1 [-3  5  3] 6  7       5
+>  1  3  -1  -3 [5  3  6] 7       6
+>  1  3  -1  -3  5 [3  6  7]      7
+> ```
+>
+> 作者：jyd
+> 链接：https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/solution/mian-shi-ti-59-i-hua-dong-chuang-kou-de-zui-da-1-6/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
