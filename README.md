@@ -4462,7 +4462,7 @@
 >     }
 > ```
 
-## [494. 目标和](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2059%20-%20II.%20%E9%98%9F%E5%88%97%E7%9A%84%E6%9C%80%E5%A4%A7%E5%80%BC/source_code.cpp)
+## [494. 目标和](https://github.com/artintel/LeetCode/blob/master/494.%20%E7%9B%AE%E6%A0%87%E5%92%8C/source_code.cpp)
 
 > 请给定一个非负整数数组，a1, a2, ..., an, 和一个目标数，S。现在你有两个符号 + 和 -。对于数组中的任意一个整数，你都可以从 + 或 -中选择一个符号添加在前面。
 >
@@ -4495,3 +4495,9 @@
 >
 > `dp[i][j + nums[i] + 1000] += dp[i - 1][j + 1000]`
 > `dp[i][j - nums[i] + 1000] += dp[i - 1][j + 1000]`
+
+## [剑指 Offer 60. n 个骰子的点数](https://github.com/artintel/LeetCode/blob/master/494.%20%E7%9B%AE%E6%A0%87%E5%92%8C/source_code.cpp)
+
+> 用两个数组来存储骰子点数的每个总数出现的次数。在一轮循环中，第一个数组中的第 n 个数字表示骰子和为 n 出现的次数。在下一轮循环中，我们加上一个新的骰子，此时和为 n 的骰子出现的次数应该等于上一轮循环中骰子点数和为 n - 1, n - 2, n - 3, n - 4, n - 5, n - 6 的次数的总和。
+>
+
