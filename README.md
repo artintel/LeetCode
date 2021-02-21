@@ -4525,7 +4525,7 @@
 > 来源：力扣（LeetCode）
 > 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
-## [剑指 Offer 61. 扑克牌中的顺子](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2060.%20n%20%E4%B8%AA%E9%AA%B0%E5%AD%90%E7%9A%84%E7%82%B9%E6%95%B0/source_code.cpp)
+## [剑指 Offer 61. 扑克牌中的顺子](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2061.%20%E6%89%91%E5%85%8B%E7%89%8C%E4%B8%AD%E7%9A%84%E9%A1%BA%E5%AD%90/source_code.cpp)
 
 > 从扑克牌中随机抽5张牌，判断是不是一个顺子，即这5张牌是不是连续的。2～10为数字本身，A为1，J为11，Q为12，K为13，而大、小王为 0 ，可以看成任意数字。A 不能视为 14。
 >
@@ -4543,3 +4543,25 @@
 > `if gap_zero > count_zero return false` 表示大小王的个数无法代替所差数字个数
 >
 > `else count_zero -= gap_zerp; gap_zero = 0;`
+
+## [剑指 Offer 62. 圆圈中最后剩下的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2061.%20%E6%89%91%E5%85%8B%E7%89%8C%E4%B8%AD%E7%9A%84%E9%A1%BA%E5%AD%90/source_code.cpp)
+
+> 0,1,···,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。
+>
+> 例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
+>
+> ```
+> 输入: n = 5, m = 3
+> 输出: 3
+> ```
+
+> 考虑两个变量：
+>
+> `count_zero ` 代表一共多少个大小王。
+>
+> `gap_zero` 如果出现断层比如 `1, 3 --> gap_zero = 1`
+>
+> `if gap_zero > count_zero return false` 表示大小王的个数无法代替所差数字个数
+>
+> `else count_zero -= gap_zerp; gap_zero = 0;`
+
