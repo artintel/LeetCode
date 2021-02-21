@@ -4496,8 +4496,32 @@
 > `dp[i][j + nums[i] + 1000] += dp[i - 1][j + 1000]`
 > `dp[i][j - nums[i] + 1000] += dp[i - 1][j + 1000]`
 
-## [剑指 Offer 60. n 个骰子的点数](https://github.com/artintel/LeetCode/blob/master/494.%20%E7%9B%AE%E6%A0%87%E5%92%8C/source_code.cpp)
+## [剑指 Offer 60. n 个骰子的点数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2060.%20n%20%E4%B8%AA%E9%AA%B0%E5%AD%90%E7%9A%84%E7%82%B9%E6%95%B0/source_code.cpp)
 
 > 用两个数组来存储骰子点数的每个总数出现的次数。在一轮循环中，第一个数组中的第 n 个数字表示骰子和为 n 出现的次数。在下一轮循环中，我们加上一个新的骰子，此时和为 n 的骰子出现的次数应该等于上一轮循环中骰子点数和为 n - 1, n - 2, n - 3, n - 4, n - 5, n - 6 的次数的总和。
 >
+
+## [300. 最长递增子序列](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2060.%20n%20%E4%B8%AA%E9%AA%B0%E5%AD%90%E7%9A%84%E7%82%B9%E6%95%B0/source_code.cpp)
+
+> 给你一个整数数组 nums ，找到其中最长严格递增子序列的长度。
+>
+> 子序列是由数组派生而来的序列，删除（或不删除）数组中的元素而不改变其余元素的顺序。例如，[3,6,2,7] 是数组 [0,3,1,6,2,2,7] 的子序列。
+>
+> ```
+> 输入：nums = [10,9,2,5,3,7,101,18]
+> 输出：4
+> 解释：最长递增子序列是 [2,3,7,101]，因此长度为 4 。
+> ```
+
+> 定义 dp[i] 为考虑前 i 个元素，以第 i 个数字结尾的最长上升子序列的长度，注意 nums[i] 必须被选取。
+>
+> 我们从小到大计算 dp 数组的值，在计算 dp[i] 之前，我们已经计算出 dp[0…i−1] 的值，则状态转移方程为：dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]; 即考虑往 dp[0…i−1] 中最长的上升子序列后面再加一个 nums[i]。由于 dp[j] 代表 nums[0…j] 中以 nums[j] 结尾的最长上升子序列，所以如果能从 dp[j] 这个状态转移过来，那么 nums[i] 必然要大于 nums[j]，才能将 nums[i] 放在 nums[j] 后面以形成更长的上升子序列。
+>
+> 最后，整个数组的最长上升子序列即所有 dp[i] 中的最大值。
+> length = max(dp[i]),其中0≤i<n
+>
+> 作者：LeetCode-Solution
+> 链接：https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-by-leetcode-soluti/
+> 来源：力扣（LeetCode）
+> 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
