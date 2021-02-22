@@ -4614,7 +4614,7 @@
 > }
 > ```
 
-## [剑指 Offer 64. 求 1 + 2 +...+ n](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/source_code.cpp)
+## [剑指 Offer 64. 求 1 + 2 +...+ n](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2064.%20%E6%B1%82%201%20%2B%202%20%2B...%2B%20n/source_code.cpp)
 
 > 求 `1+2+...+n` ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
 >
@@ -4626,3 +4626,23 @@
 > 考察发散思维，分别可用 构造函数-单例模式。虚函数继承来编写
 >
 > 关键：`A[!!n]`
+
+## [剑指 Offer 65. 不用加减乘除做加法](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2064.%20%E6%B1%82%201%20%2B%202%20%2B...%2B%20n/source_code.cpp)
+
+> 写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号。
+>
+> ```
+> 输入: a = 1, b = 1
+> 输出: 2
+> ```
+
+> ```cpp
+> int sum, carray;
+> do{
+> 	sum = a ^ b;
+> 	carray = ( a & b ) << 1;
+> 	a = sum;
+> 	b = sum;
+> }while( b != 0 )
+> ```
+
