@@ -4640,9 +4640,24 @@
 > int sum, carray;
 > do{
 > 	sum = a ^ b;
-> 	carray = ( a & b ) << 1;
+> 	carray = (unsigned int)( a & b ) << 1;
 > 	a = sum;
 > 	b = sum;
 > }while( b != 0 )
 > ```
+
+## [剑指 Offer 66. 构建乘积数组](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2064.%20%E6%B1%82%201%20%2B%202%20%2B...%2B%20n/source_code.cpp)
+
+> 给定一个数组 A[0,1,…,n-1]，请构建一个数组 B[0,1,…,n-1]，其中 B[i] 的值是数组 A 中除了下标 i 以外的元素的积, 即 B[i]=A[0]×A[1]×…×A[i-1]×A[i+1]×…×A[n-1]。不能使用除法。
+>
+> ```
+> 输入: [1,2,3,4,5]
+> 输出: [120,60,40,30,24]
+> ```
+
+> 维护两个数组 left, right
+>
+> 分别存储当前位置左边所有数字的乘积和当前位置右边所有数字的乘积。
+>
+> 最后 `dp[i] = left[i] * right[i]` 即为所求结果
 
