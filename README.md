@@ -4590,7 +4590,7 @@
 
 > 滑动窗口即可
 
-## [剑指 Offer 63. 股票的最大利润](https://github.com/artintel/LeetCode/tree/master/438.%20%E6%89%BE%E5%88%B0%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%89%80%E6%9C%89%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D)
+## [剑指 Offer 63. 股票的最大利润](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/source_code.cpp)
 
 > 假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
 >
@@ -4614,3 +4614,15 @@
 > }
 > ```
 
+## [剑指 Offer 64. 求 1 + 2 +...+ n](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2063.%20%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%A9%E6%B6%A6/source_code.cpp)
+
+> 求 `1+2+...+n` ，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+>
+> ```
+> 输入: n = 3
+> 输出: 6
+> ```
+
+> 考察发散思维，分别可用 构造函数-单例模式。虚函数继承来编写
+>
+> 关键：`A[!!n]`
