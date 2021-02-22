@@ -4661,11 +4661,9 @@
 >
 > 最后 `dp[i] = left[i] * right[i]` 即为所求结果
 
-## [剑指 Offer 67. 把字符串转换成整数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2066.%20%E6%9E%84%E5%BB%BA%E4%B9%98%E7%A7%AF%E6%95%B0%E7%BB%84/source_code.cpp)
+## [剑指 Offer 67. 把字符串转换成整数](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/source_code.cpp)
 
 > 写一个函数 StrToInt，实现把字符串转换成整数这个功能。不能使用 atoi 或者其他类似的库函数。
->
->  
 >
 > 首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。
 >
@@ -4688,4 +4686,24 @@
 > ```
 
 > 状态机
+
+## [剑指 Offer 68 - I. 二叉搜索树的最近公共祖先](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2067.%20%E6%8A%8A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E6%88%90%E6%95%B4%E6%95%B0/source_code.cpp)
+
+> 给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。
+>
+> 百度百科中最近公共祖先的定义为：“对于有根树 T 的两个结点 p、q，最近公共祖先表示为一个结点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”
+>
+> 例如，给定如下二叉搜索树:  root = [6,2,8,0,4,7,9,null,null,3,5]
+>
+> ```
+> 输入: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+> 输出: 6 
+> 解释: 节点 2 和节点 8 的最近公共祖先是 6。
+> ```
+
+> 递归遍历：
+>
+> 如果两个子节点的值都大于等于root，说明最近公共祖先一定在 root->right；否则在 root->left;
+>
+> 如果两个子节点分属于root两边，那么 root 即为所找最近公共祖先
 
