@@ -1,7 +1,7 @@
 /*
  * @Author: Mayc
  * @Date: 2021-01-30 11:42:11
- * @LastEditTime: 2021-01-30 11:42:22
+ * @LastEditTime: 2021-02-22 15:57:54
  * @FilePath: \undefinedd:\VSC++&GO\LeetCode\236. 二叉树的最近公共祖先\source_code.cpp
  * @这是一个漂亮的注释头
  */
@@ -35,7 +35,7 @@ public:
         if( !root ) return nullptr;
         order[root->val] = nullptr;
         dfs(root);
-        while( p ){
+        while( p ){ 
             vis[p->val] = true;
             p = order[p->val];
         }
