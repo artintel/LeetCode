@@ -4544,7 +4544,7 @@
 >
 > `else count_zero -= gap_zerp; gap_zero = 0;`
 
-## [剑指 Offer 62. 圆圈中最后剩下的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2061.%20%E6%89%91%E5%85%8B%E7%89%8C%E4%B8%AD%E7%9A%84%E9%A1%BA%E5%AD%90/source_code.cpp)
+## [剑指 Offer 62. 圆圈中最后剩下的数字](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2062.%20%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
 
 > 0,1,···,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字（删除后从下一个数字开始计数）。求出这个圆圈里剩下的最后一个数字。
 >
@@ -4564,4 +4564,29 @@
 > `if gap_zero > count_zero return false` 表示大小王的个数无法代替所差数字个数
 >
 > `else count_zero -= gap_zerp; gap_zero = 0;`
+
+## [438. 找到字符串中所有字母异位词](https://github.com/artintel/LeetCode/blob/master/%E5%89%91%E6%8C%87%20Offer%2062.%20%E5%9C%86%E5%9C%88%E4%B8%AD%E6%9C%80%E5%90%8E%E5%89%A9%E4%B8%8B%E7%9A%84%E6%95%B0%E5%AD%97/source_code.cpp)
+
+> 给定一个字符串 s 和一个非空字符串 p，找到 s 中所有是 p 的字母异位词的子串，返回这些子串的起始索引。
+>
+> 字符串只包含小写英文字母，并且字符串 s 和 p 的长度都不超过 20100。
+>
+> 说明：
+>
+> 字母异位词指字母相同，但排列不同的字符串。
+> 不考虑答案输出的顺序。
+>
+> ```
+> 输入:
+> s: "cbaebabacd" p: "abc"
+> 
+> 输出:
+> [0, 6]
+> 
+> 解释:
+> 起始索引等于 0 的子串是 "cba", 它是 "abc" 的字母异位词。
+> 起始索引等于 6 的子串是 "bac", 它是 "abc" 的字母异位词。
+> ```
+
+> 滑动窗口即可
 
